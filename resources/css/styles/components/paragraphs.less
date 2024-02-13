@@ -1,0 +1,27 @@
+// out:false
+
+.paragraph  		{
+	.headline,
+	.subtitle 	 	{ margin-bottom:20px; }
+	.content 		{ margin-bottom:20px; line-height: 1.4; }
+	.links 			{ .flex-display(flex); .flex-wrap(wrap); gap:10px; }
+	@media (max-width: @screen-sm-max)	{
+		.textMediabox { padding: 0 5vw; }
+	}
+}
+
+.paragraph1 {
+	@media (min-width: @screen-md-min) 	{
+		.textMediabox { .flex-display(flex); }
+		.mediabox { width:50%; }
+		.textbox { width:50%; }
+	}
+}
+
+.paragraph2 {
+	@media (min-width: @screen-md-min) 	{
+		.textMediabox { .flex-display(flex); }
+		.mediabox { width:50%; }
+		.textbox { width:50%; }
+	}
+}

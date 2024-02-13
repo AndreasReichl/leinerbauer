@@ -1,0 +1,66 @@
+// out: false
+// color system
+//
+
+:root {
+    --font-color: #FAFAFA;
+    --bg-color: #0B0B0B;
+    --border-color: #3f3f3f;
+    --white: #ffffff;
+    --black: #0B0B0B;
+    --grey: #A3A3A3;
+
+    --primary-color: #E5B271;
+    --secondary-color: #14E7E7;
+    --third-color: #80398f;
+    --fourth-color: #1cf4b0;
+    --fifth-color: #f41c61;
+
+    --success-color: #22e2bc;
+    --info-color: #5bc0de;
+    --warning-color: #FBBF24;
+    --danger-color: #FF004C;
+
+    --texthighlight-color: #AFF6FF;
+}
+
+// color classes
+
+.primary 		{ color:var(--primary-color); }
+.secondary 		{ color:var(--secondary-color); }
+.third 		    { color:var(--third-color); }
+.fourth 		{ color:var(--fourth-color); }
+.fifth 		    { color:var(--fifth-color); }
+
+.white 			{ color:var(--white); }
+.black 			{ color:var(--black); }
+.grey 			{ color:var(--grey); }
+.globalfont 	{ color:var(--font-color); }
+.success 		{ color:var(--success-color); }
+.info 		    { color:var(--info-color); }
+.warning        { color:var(--warning-color); }
+.danger         { color:var(--danger-color); }
+
+.bg-primary 	{ background-color:var(--primary-color); }
+.bg-secondary 	{ background-color:var(--secondary-color); }
+.bg-third 	    { background-color:var(--third-color); }
+.bg-fourth 	    { background-color:var(--fourth-color); }
+.bg-fifth 	    { background-color:var(--fifth-color); }
+
+.bg-white 		{ background-color:var(--white); }
+.bg-black 		{ background-color:var(--black); }
+.bg-grey 		{ background-color:var(--grey); }
+.bg-success 	{ background-color:var(--success-color); }
+
+// THEMES
+
+body            { color:var(--font-color); background-color:var(--bg-color); }
+.texthighlite   { background-color:var(--texthighlight-color); }
+
+.gradientBgBlack {
+    background: rgb(0,0,0);
+background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
+background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}

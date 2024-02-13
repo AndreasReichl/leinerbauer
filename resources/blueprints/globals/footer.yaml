@@ -1,0 +1,20 @@
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        fields:
+          -
+            handle: footer_template
+            field:
+              hide_partials: true
+              blueprint: false
+              folder: components
+              type: template
+              display: 'Footer template'
+              icon: template
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
