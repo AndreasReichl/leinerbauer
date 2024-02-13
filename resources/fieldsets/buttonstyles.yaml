@@ -1,0 +1,86 @@
+title: Buttons
+fields:
+  -
+    handle: icon
+    field:
+      type: icon
+      display: Icon
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      width: 25
+      directory: resources/assets/icons
+  -
+    handle: text
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      width: 50
+  -
+    handle: style
+    field:
+      options:
+        default: Standard
+        primary: 'Firmenfarbe 1'
+        secondary: 'Firmenfarbe 2'
+        third: 'Firmenfarbe 3'
+        fourth: 'Firmenfarbe 4'
+        fifth: 'Firmenfarbe 5'
+        inverse: Invertiert
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: default
+      type: select
+      display: Style
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      width: 25
+  -
+    handle: link_feld
+    field:
+      type: link
+      display: 'Link Feld'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      width: 66
+  -
+    handle: zielseite
+    field:
+      options:
+        _self: 'gleicher Tab oder Seite'
+        _blank: 'neuer Tab oder Fenster'
+        _parent: Elternfenster
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: _self
+      type: select
+      display: Zielseite
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      width: 33

@@ -1,0 +1,15 @@
+<a href="/" class="logoMain">
+	<img src="{{ sitebasics.logo.url }}" alt="{{ sitebasics.logo.alt }}" />
+</a>
+<a href="/" class="logoIcon">
+	<img src="{{ sitebasics.logo_icon.url }}" alt="{{ sitebasics.logo_icon.alt }}" />
+</a>
+<div class="burgerBtn">
+	<span class="burgerOpen"><i class="icofont-navigation-menu"></i></span>
+	<span class="burgerClose"><i class="icofont-close"></i></span>
+</div>
+<div class="mainnav">
+	{{ nav:mainnav }}
+		<a href="{{ url }}" class="mainmenu{{ if is_current}} active{{ /if }}">{{ title }}</a>
+	{{ /nav:mainnav }}
+</div>

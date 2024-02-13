@@ -1,0 +1,20 @@
+<footer class="component_footer">
+	<div class="iconLogo">
+		<span></span>
+		<img src="{{ sitebasics.logo_icon.url }}" alt="{{ sitebasics.logo_icon.alt }}" />
+		<span></span>
+	</div>
+	<div class="footerNav">
+		{{ nav:footernav }}
+			<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
+		{{ /nav:footernav }}
+	</div>
+	<div class="socialLinks">
+		{{ if sitebasics.instagram }}<a href="{{ sitebasics.instagram }}" class="socialLink instagram" target="_blank"><i class="icofont-instagram"></i></a>{{ /if }}
+		{{ if sitebasics.facebook }}<a href="{{ sitebasics.facebook }}" class="socialLink facebook" target="_blank"><i class="icofont-facebook"></i></a>{{ /if }}
+		{{ if sitebasics.youtube }}<a href="{{ sitebasics.youtube }}" class="socialLink youtube" target="_blank"><i class="icofont-youtube"></i></a>{{ /if }}
+		{{ if sitebasics.twitter }}<a href="{{ sitebasics.twitter }}" class="socialLink twitter" target="_blank"><i class="icofont-twitter"></i></a>{{ /if }}
+		{{ if sitebasics.tiktok }}<a href="{{ sitebasics.tiktok }}" class="socialLink tiktok" target="_blank"><i class="icofont-tiktok"></i></a>{{ /if }}
+	</div>
+
+</footer>

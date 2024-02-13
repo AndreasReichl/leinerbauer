@@ -12,7 +12,6 @@ tabs:
               folder: components
               type: template
               display: 'Header Template'
-              icon: template
               listable: hidden
               instructions_position: above
               visibility: visible
