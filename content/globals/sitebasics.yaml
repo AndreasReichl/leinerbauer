@@ -1,1 +1,9 @@
 title: Sitebasics
+data:
+  logo: sitebasics/logo.svg
+  logo_icon: sitebasics/favicon.svg
+  favicon: sitebasics/favicon.svg
+  apple_touch_icon: sitebasics/apple-touch-icon.png
+  logo_footer: sitebasics/logo-footer.svg
+  instagram: 'https://www.instagram.com/leinerbauer_hofbackstube/'
+  facebook: 'https://www.facebook.com/leinerbauer'

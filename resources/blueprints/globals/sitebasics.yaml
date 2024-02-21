@@ -81,6 +81,25 @@ tabs:
               hide_display: false
               folder: sitebasics
               width: 50
+          -
+            handle: logo_footer
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Logo Footer'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              folder: sitebasics
+              width: 50
       -
         display: 'Social Links'
         instructions: 'Socialnetwork Links'
