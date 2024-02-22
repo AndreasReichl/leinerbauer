@@ -1,4 +1,9 @@
 // out: false
+
+.headerSpacer 	{ height:60px;
+	@media (min-width: @screen-md-min)	{ height:150px; }
+}
+
 .logoMain 		{ display:none; }
 .logoIcon 		{ position:fixed; top:15px; left:30px; z-index:999; .flex-display(inline-flex); width: auto; max-width: 40px; }
 @media (min-width: @screen-md-min)	{

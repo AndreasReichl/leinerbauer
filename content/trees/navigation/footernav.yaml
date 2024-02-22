@@ -1,1 +1,9 @@
-{  }
+tree:
+  -
+    id: bbefe39f-8866-49cc-b54b-fde1f9e283eb
+    title: Impressum
+    url: impressum
+  -
+    id: 3c7c1965-e9f7-405d-9103-99edcb43b1e7
+    title: Datenschutz
+    url: datenschutz

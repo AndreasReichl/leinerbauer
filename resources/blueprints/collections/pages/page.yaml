@@ -11,6 +11,17 @@ tabs:
               required: true
               validate:
                 - required
+              display: Seitenname
+              instructions: 'Hier wird der Name der Seite festgelegt. Dieser Name wird nicht im template angezeigt.'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+      -
+        display: Inhalte
   seo:
     display: SEO
     sections:
