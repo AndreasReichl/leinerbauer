@@ -1,6 +1,3 @@
-<a href="/" class="logoMain">
-	<img src="{{ sitebasics.logo.url }}" alt="{{ sitebasics.logo.alt }}" />
-</a>
 <a href="/" class="logoIcon">
 	<img src="{{ sitebasics.logo_icon.url }}" alt="{{ sitebasics.logo_icon.alt }}" />
 </a>
@@ -9,7 +6,23 @@
 	<span class="burgerClose"><i class="icofont-close"></i></span>
 </div>
 <div class="mainnav">
+	<a href="/" class="logoMain">
+		<img src="{{ sitebasics.logo.url }}" alt="{{ sitebasics.logo.alt }}" />
+	</a>
 	{{ nav:mainnav }}
-		<a href="{{ url }}" class="mainmenu{{ if is_current}} active{{ /if }}">{{ title }}</a>
+		{{ if children }}
+			<div class="dropdown" id="dropdown_{{ id }}">
+				<div data-dropdown-id="dropdown_{{ id }}" class="a mainmenu dropdownToggle">{{ title }}</div>
+				<div class="dropdown-content">
+					<div class="">
+						{{ children }}
+							<a href="{{ url }}" class="subnmenu{{ if is_current}} active{{ /if }}">{{ title }}</a>
+						{{ /children }}
+					</div>
+				</div>
+			</div>
+		{{ else }}
+			<a href="{{ url }}" class="mainmenu{{ if is_current}} active{{ /if }}">{{ title }}</a>
+		{{ /if }}
 	{{ /nav:mainnav }}
 </div>

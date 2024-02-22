@@ -11,6 +11,59 @@ tabs:
               required: true
               validate:
                 - required
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            handle: robots
+            field:
+              options:
+                'index,follow': 'Seite wird indiziert und den Links gefolgt'
+                'index,nofollow': 'Seite wird indiziert, den Links wird nicht gefolgt'
+                'noindex,follow': 'Seite wird nicht indiziert, den Links aber gefolgt'
+                'noindex,nofollow': 'Seite wird nicht indiziert und den Links nicht gefolgt'
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              default: 'index,follow'
+              type: select
+              display: Robots
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: seo_title
+            field:
+              input_type: text
+              character_limit: 70
+              antlers: false
+              type: text
+              display: 'SEO Title'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: seo_description
+            field:
+              character_limit: '175'
+              antlers: false
+              type: textarea
+              display: 'SEO Description'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   sidebar:
     display: Sidebar
     sections:

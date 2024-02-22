@@ -154,3 +154,13 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+          -
+            handle: whatsapp
+            field:
+              type: link
+              display: whatsapp
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

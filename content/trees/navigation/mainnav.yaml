@@ -1,1 +1,25 @@
-{  }
+tree:
+  -
+    id: 3d331ec4-01ca-4979-8302-d9616cc79e40
+    title: Aktuelles
+    url: /
+  -
+    id: a83f1c35-a2c4-41a0-80ca-dae353229934
+    title: Backstube
+    url: backstube
+  -
+    id: 9de4179a-0cab-469e-97c3-10a333b161e5
+    title: Eventstube
+    url: eventstube
+  -
+    id: 030f3e7e-805c-437b-87b2-c010ec04abcb
+    title: 'Essen & Trinken'
+    url: essen-und-trinken
+  -
+    id: ecedce3a-d3a9-45d8-96a0-ece5121073b6
+    title: 'Über uns'
+    url: ueber-uns
+  -
+    id: ea7ac50e-cae1-434e-b11a-678100760b5c
+    title: Kontakt
+    url: kontakt

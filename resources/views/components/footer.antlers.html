@@ -1,7 +1,37 @@
 <footer class="component_footer">
-	<div class="footerLogo">
-		<img src="{{ sitebasics.logo_footer.url }}" alt="{{ sitebasics.logo_footer.alt }}" />
+	<div class="footerLineelement">
+		<img src="assets/lineelement-footer.svg" alt="linelelement" />
 	</div>
+	<div class="footerBlock">
+		<div class="footerLogo">
+			<img src="{{ sitebasics.logo_footer.url }}" alt="{{ sitebasics.logo_footer.alt }}" />
+		</div>
+		<div class="footerAddressBlock">
+			<h4 class="">So erreichen Sie uns:</h3>
+			<div class="footerAddress">
+				<div class="footerAddressCol">
+					Kerstin Reichl<br />
+					Oed 3<br />
+					92711 Parkstein
+				</div>
+				<div class="footerAddressCol">
+					<div class="">
+						<span class="addressLabel">Tel.:</span>
+						<span class="addressEntry">0 96 02 / 68 04</span>
+					</div>
+					<div class="">
+						<span class="addressLabel">Handy:</span>
+						<span class="addressEntry">0171 / 756 47 01</span>
+					</div>
+					<div class="">
+						<span class="addressLabel">Email:</span>
+						<span class="addressEntry">info@leinerbauer.de</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="footerNav">
 		{{ nav:footernav }}
 			<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
@@ -13,6 +43,32 @@
 		{{ if sitebasics.youtube }}<a href="{{ sitebasics.youtube }}" class="socialLink youtube" target="_blank"><i class="icofont-youtube"></i></a>{{ /if }}
 		{{ if sitebasics.twitter }}<a href="{{ sitebasics.twitter }}" class="socialLink twitter" target="_blank"><i class="icofont-twitter"></i></a>{{ /if }}
 		{{ if sitebasics.tiktok }}<a href="{{ sitebasics.tiktok }}" class="socialLink tiktok" target="_blank"><i class="icofont-tiktok"></i></a>{{ /if }}
+		{{ if sitebasics.whatsapp }}<a href="https://wa.me/{{ sitebasics.whatsapp }}" class="socialLink whatsapp" target="_blank"><i class="icofont-whatsapp"></i></a>{{ /if }}
+		<div class="sociallinksText">Hier könnt Ihr uns auch erreichen</div>
+		<div class="dottedlineSociallinks">
+			<?xml version="1.0" encoding="utf-8"?>
+			<svg version="1.1" id="dottedlineSociallinks" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 3.6 197.7" style="enable-background:new 0 0 3.6 197.7;" xml:space="preserve">
+				<g>
+					<polygon class="st0" points="1.9,197.7 1.9,194.6 1.9,194.5 	"/>
+					<polygon class="st0" points="1.8,188.2 2,188.5 2,182.4 1.7,181.9 	"/>
+					<polygon class="st0" points="1.7,172.6 1.7,175.7 1.7,175.7 2.1,176.3 2.1,173.3 2.1,170.2 1.7,169.5 	"/>
+					<polygon class="st0" points="1.6,163.2 2.2,164.1 2.2,158 1.6,157 	"/>
+					<polygon class="st0" points="1.5,150.8 2.2,151.9 2.2,145.8 1.5,144.6 	"/>
+					<polygon class="st0" points="1.5,138.3 2.2,139.6 2.2,133.5 1.5,132.1 	"/>
+					<polygon class="st0" points="1.4,125.9 2.3,127.3 2.3,121.2 1.4,119.7 	"/>
+					<polygon class="st0" points="1.4,107.4 1.4,113.6 2.3,115 2.3,108.8 	"/>
+					<polygon class="st0" points="2.3,99.6 2.3,96.5 1.4,95 1.4,98.1 1.4,101.2 1.4,101.2 2.3,102.7 	"/>
+					<polygon class="st0" points="2.2,84.1 1.4,82.7 1.4,88.9 2.2,90.3 	"/>
+					<polygon class="st0" points="2.2,74.9 2.2,71.8 1.4,70.4 1.4,73.4 1.4,76.5 1.4,76.5 2.2,78 	"/>
+					<polygon class="st0" points="2.2,59.4 1.4,58.1 1.4,64.2 2.2,65.6 	"/>
+					<polygon class="st0" points="2.1,46.9 1.4,45.8 1.4,52 2.1,53.2 	"/>
+					<polygon class="st0" points="2,34.5 1.5,33.6 1.5,39.7 2.1,40.7 	"/>
+					<polygon class="st0" points="2,25.1 1.9,22 1.6,21.4 1.5,24.4 1.5,27.5 2,28.3 	"/>
+					<polygon class="st0" points="1.9,15.8 1.9,12.6 1.8,9.5 1.6,9.2 1.6,12.2 1.6,15.3 1.6,15.3 	"/>
+					<polygon class="st0" points="1.7,0 1.7,3.1 1.8,3.2 	"/>
+				</g>
+			</svg>
+		</div>
 	</div>
 
 </footer>
