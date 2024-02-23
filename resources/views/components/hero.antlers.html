@@ -1,0 +1,28 @@
+<div class="hero">
+	{{ if hero_image }}
+		<div class="heroMedia">
+			{{ hero_image }}
+				<img src="{{ glide:url :crop="crops:4_1:crop" }}" alt="{{ alt }}" />
+			{{ /hero_image }}
+		</div>
+	{{ /if }}
+
+	<div class="heroContent">
+		{{ if hero_title }}<h1>{{ hero_title }}</h1>{{ /if }}
+		{{ if hero_subtitle }}<h3>{{ hero_subtitle }}</h3>{{ /if }}
+		{{ if hero_info }}<p>{{ hero_info }} </p>{{ /if }}
+		{{ if hero_links }}
+		<div>
+			{{ hero_links }}
+				{{ partial:elements/button
+					:url='hero_link_feld'
+					:style='hero_style'
+					:target='hero_zielseite'
+					:icon='hero_icon'
+					:text='hero_text'
+				}}
+			{{ /hero_links }}
+		</div>
+		{{ /if }}
+	</div>
+</div>

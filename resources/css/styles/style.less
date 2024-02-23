@@ -81,14 +81,11 @@ ul  { margin:0; padding:0;
 
 
 // hero
-.hero 				{ position:relative; color:var(--white); background-color:var(--black); width:100%; height:auto;
-	.heroMedia 		{ .flex-display(flex); margin:90px 5vw; height:30vw; overflow:hidden;
-		img 		{ object-fit: cover; margin-top:-20%; }
-		@media (max-width: @screen-sm-max)	{ margin:70px 5vw 5vw 5vw; }
+.hero 				{ position:relative; color:var(--white); width:100%; height:auto; max-width:90vw; margin:0px auto; .border-radius(8px); .box-shadow2; overflow:hidden;
+	.heroMedia 		{
+		img 		{ line-height: 0; }
 	}
-	.heroContent 	{ position: absolute; top:50%; left:50%; .translate(-50%,-50%); mix-blend-mode: soft-light;
-		h1 			{ font-size: clamp(48px,10vw,182px); }
-	}
+	.heroContent 	{ position: absolute; top:50%; left:50%; .translate(-50%,-50%); text-align:center; /*mix-blend-mode: soft-light;*/ }
 }
 
 

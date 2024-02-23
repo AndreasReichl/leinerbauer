@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b003a64a0e0e5a05606249bda04a273",
+    "content-hash": "79a00bb99419f2f7e7e170a31f143c90",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -262,16 +262,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "b66d11b7479109ab547f9405b97205640b17d385"
+                "reference": "3ce240142f6d59b808dd65c1f52f7a1c252e6cfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/b66d11b7479109ab547f9405b97205640b17d385",
-                "reference": "b66d11b7479109ab547f9405b97205640b17d385",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/3ce240142f6d59b808dd65c1f52f7a1c252e6cfd",
+                "reference": "3ce240142f6d59b808dd65c1f52f7a1c252e6cfd",
                 "shasum": ""
             },
             "require": {
@@ -318,7 +318,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/ca-bundle/issues",
-                "source": "https://github.com/composer/ca-bundle/tree/1.4.0"
+                "source": "https://github.com/composer/ca-bundle/tree/1.4.1"
             },
             "funding": [
                 {
@@ -334,7 +334,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-18T12:05:55+00:00"
+            "time": "2024-02-23T10:16:52+00:00"
         },
         {
             "name": "composer/class-map-generator",
@@ -8527,6 +8527,63 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.2.7"
             },
             "time": "2023-12-08T13:03:43+00:00"
+        },
+        {
+            "name": "tv2regionerne/statamic-image-cropper",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tv2regionerne/statamic-image-cropper.git",
+                "reference": "67b2353dec8f9fff161249148cd4718a0fbfee7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tv2regionerne/statamic-image-cropper/zipball/67b2353dec8f9fff161249148cd4718a0fbfee7a",
+                "reference": "67b2353dec8f9fff161249148cd4718a0fbfee7a",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^4.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic Image Cropper",
+                    "description": "Statamic Image Cropper addon"
+                },
+                "laravel": {
+                    "providers": [
+                        "Tv2regionerne\\StatamicImageCropper\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tv2regionerne\\StatamicImageCropper\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sylvester Damgaard",
+                    "email": "syda@tv2reg.dk",
+                    "role": "Systems Architect"
+                },
+                {
+                    "name": "Frederik Sauer",
+                    "email": "fsa@dwarf.dk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Image cropping fieldtype for Statamic",
+            "support": {
+                "issues": "https://github.com/tv2regionerne/statamic-image-cropper/issues",
+                "source": "https://github.com/tv2regionerne/statamic-image-cropper/tree/v1.4.0"
+            },
+            "time": "2024-01-05T08:41:41+00:00"
         },
         {
             "name": "ueberdosis/tiptap-php",

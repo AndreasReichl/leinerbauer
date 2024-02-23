@@ -20,8 +20,148 @@ tabs:
               input_type: text
               antlers: false
               hide_display: false
+  hero:
+    display: Hero
+    sections:
       -
-        display: Inhalte
+        display: Hero
+        fields:
+          -
+            handle: hero_image
+            field:
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Hero Image'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: crops
+            field:
+              show_details: true
+              source: hero_image
+              mode: manual
+              dimensions:
+                '16_9': 16/9
+                '4_3': 4/3
+                '4_2': 4/2
+                '4_1': 4/1
+                freeform: Freiform
+              type: image_cropper
+              display: 'Image Cropper'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: hero_title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Überschrift
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: hero_subtitle
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Untertitel
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: hero_info
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h4
+                - h5
+                - h6
+                - underline
+                - strikethrough
+                - horizontalrule
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+              smart_typography: false
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: false
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: 'Hero Info'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: hero_links
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                neue_set-gruppe:
+                  display: 'Neue Set-Gruppe'
+                  instructions: null
+                  icon: null
+                  sets:
+                    links:
+                      display: Links
+                      instructions: null
+                      icon: link
+                      fields:
+                        -
+                          import: buttonstyles
+                          prefix: hero_
+              type: replicator
+              display: 'Hero Links'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   seo:
     display: SEO
     sections:

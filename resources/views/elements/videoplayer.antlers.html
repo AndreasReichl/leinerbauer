@@ -1,0 +1,7 @@
+{{ if video }}
+{{ if video | is_embeddable }}
+	<iframe class="responsive-iframe" src="{{ video | embed_url }}" type="text/html" width="640" height="360" frameborder="0"></iframe>
+{{ else }}
+	<video class="responsive-iframe" src="{{ video | embed_url }}" width="640" height="360" controls></video>
+{{ /if }}
+{{ /if }}
