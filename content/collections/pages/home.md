@@ -4,10 +4,10 @@ blueprint: pages
 title: Home
 template: home
 updated_by: 8a836dbc-3945-44cc-b596-37a44f2c793e
-updated_at: 1708691243
+updated_at: 1708937794
 robots: 'index,follow'
 seo_title: 'Leinerbauern´s Hofbackstube'
-seo_description: 'Willkommen auf der offiziellen Homepage der Leinerbauern´s Hofbackstube. Wir bieten leckere Backwaren, Pizza, Spareribs, Schweinshaxn und Braten aus unserem Holzbackofen.'
+seo_description: 'Wir bieten Brot und Backwaren sowie Pizza, Spareribs, Schweinshaxn und Braten aus dem Holzbackofen. In unserer urigen Eventstube kann mit bis zu 70 Personen gefeiert werden.'
 image:
   - homeslider/neue_wirtsstube_ansicht_aussen.jpg
 image_cropper:

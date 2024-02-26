@@ -8530,16 +8530,16 @@
         },
         {
             "name": "tv2regionerne/statamic-image-cropper",
-            "version": "v1.4.0",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tv2regionerne/statamic-image-cropper.git",
-                "reference": "67b2353dec8f9fff161249148cd4718a0fbfee7a"
+                "reference": "d18d9b1086c4bcc8b008b69cf4ca06db13a69b4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tv2regionerne/statamic-image-cropper/zipball/67b2353dec8f9fff161249148cd4718a0fbfee7a",
-                "reference": "67b2353dec8f9fff161249148cd4718a0fbfee7a",
+                "url": "https://api.github.com/repos/tv2regionerne/statamic-image-cropper/zipball/d18d9b1086c4bcc8b008b69cf4ca06db13a69b4c",
+                "reference": "d18d9b1086c4bcc8b008b69cf4ca06db13a69b4c",
                 "shasum": ""
             },
             "require": {
@@ -8581,9 +8581,9 @@
             "description": "Image cropping fieldtype for Statamic",
             "support": {
                 "issues": "https://github.com/tv2regionerne/statamic-image-cropper/issues",
-                "source": "https://github.com/tv2regionerne/statamic-image-cropper/tree/v1.4.0"
+                "source": "https://github.com/tv2regionerne/statamic-image-cropper/tree/v1.5.0"
             },
-            "time": "2024-01-05T08:41:41+00:00"
+            "time": "2024-02-26T06:51:28+00:00"
         },
         {
             "name": "ueberdosis/tiptap-php",
