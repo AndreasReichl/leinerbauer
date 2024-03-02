@@ -1,0 +1,381 @@
+title: Event
+fields:
+  -
+    handle: datum
+    field:
+      mode: single
+      inline: false
+      full_width: false
+      columns: 1
+      rows: 1
+      time_enabled: false
+      time_seconds_enabled: false
+      type: date
+      display: Datum
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: uhrzeit
+    field:
+      seconds_enabled: false
+      type: time
+      display: Uhrzeit
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Headline
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline_type
+    field:
+      options:
+        h1: H1
+        h2: H2
+        h3: H3
+        h4: H4
+        h5: H5
+        h6: H6
+        div: Div
+        span: Span
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: h2
+      type: select
+      display: 'Headline Typ'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline_color
+    field:
+      swatches:
+        - '#27272A'
+        - '#6F1D46'
+        - '#DBD1C2'
+        - '#9CA3AF'
+        - '#1cf4b0'
+        - '#f41c61'
+        - '#e9e9e9'
+        - '#71717A'
+        - '#27272A'
+      allow_any: true
+      type: color
+      display: 'Headline color'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: subtitle
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Subtitle
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: subtitle_type
+    field:
+      options:
+        h1: H1
+        h2: H2
+        h3: H3
+        h4: H4
+        h5: H5
+        h6: H6
+        div: Div
+        span: Span
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: h3
+      type: select
+      display: 'Subtitle Typ'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: subtitle_color
+    field:
+      swatches:
+        - '#A57246'
+        - '#14E7E7'
+        - '#572710'
+        - '#FFF8EF'
+        - '#965D35'
+      allow_any: true
+      type: color
+      display: 'Subtitle color'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: infotext
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - color
+        - h4
+        - h5
+        - h6
+        - underline
+        - strikethrough
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+      smart_typography: false
+      save_html: false
+      inline: false
+      toolbar_mode: fixed
+      reading_time: false
+      word_count: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      remove_empty_nodes: false
+      antlers: false
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      always_show_set_button: false
+      collapse: false
+      previews: true
+      type: bard
+      display: Infotext
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: links
+    field:
+      fields:
+        -
+          import: buttonstyles
+          prefix: button_
+      mode: stacked
+      reorderable: true
+      fullscreen: true
+      type: grid
+      display: Links
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: image
+    field:
+      max_files: 1
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: Image
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: image_bg_color
+    field:
+      swatches:
+        - '#A57246'
+        - '#14E7E7'
+        - '#572710'
+        - '#FFF8EF'
+        - '#965D35'
+      allow_any: true
+      type: color
+      display: 'Image BG Color'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: image_filter
+    field:
+      options:
+        normal: Normal
+        luminosity: Luminanz
+        multiply: Multiplizieren
+        hard-light: 'Hartes Licht'
+        soft-light: 'Weiches Licht'
+        screen: Ineinanderkopieren
+        overlay: Überlagern
+        difference: Differenz
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: normal
+      type: select
+      display: 'Image Filter'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: crops
+    field:
+      show_details: true
+      source: event_image
+      mode: manual
+      dimensions:
+        freeform: Freeform
+        '16_9': '16:9'
+        '4_3': '4:3'
+        '4_1': '4:1'
+        '3_1': '3:1'
+        '2_1': '2:1'
+      type: image_cropper
+      display: 'Bildausschnitte festlegen'
+      instructions: 'Hier werden die Bildausschnitte festgelegt.'
+      width: 66
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: crops_size
+    field:
+      options:
+        freeform: Freeform
+        '16_9': '16:9'
+        '4_3': '4:3'
+        '4_1': '4:1'
+        '3_1': '3:1'
+        '2_1': '2:1'
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: '4_3'
+      type: select
+      display: 'Seitenverhältnis wählen'
+      instructions: 'Hier wird das Größenverhältnis ausgewählt, welches dann auf der Seite verwendet wird.'
+      width: 33
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: video
+    field:
+      type: video
+      display: Video
+      instructions: 'Falls ein Video gewählt ist, erscheint dieses anstelle des Bildes.'
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: hashtag_name
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Hashtag Name'
+      instructions: 'Generiert eine Absatz ID. Dieser Name darf nur einmal vorkommen und sollte keine Leerzeichen enthalten.'
+      width: 50
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: event_class
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Event Class'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      width: 50
+  -
+    handle: full_width
+    field:
+      default: false
+      type: toggle
+      display: 'Absatzbreite über die gesamte Seite'
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

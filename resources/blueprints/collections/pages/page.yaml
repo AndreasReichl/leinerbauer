@@ -20,6 +20,20 @@ tabs:
               input_type: text
               antlers: false
               hide_display: false
+          -
+            handle: events
+            field:
+              mode: default
+              create: true
+              collections:
+                - events
+              type: entries
+              display: Events
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   hero:
     display: Hero
     sections:

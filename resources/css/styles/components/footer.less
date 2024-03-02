@@ -14,12 +14,12 @@
 	.socialLink 		{ color:#A57246;
 		&:hover 		{ color: #E0CFBA; }
 	}
-	.sociallinksText { width:100%; text-align: center; order:-1; color:#E0CFBA; user-select: none; margin:15px 0; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+	.sociallinksText { width:100%; text-align: center; order:-1; color:#E0CFBA; user-select: none; margin:15px 0; font-weight: bold; font-size: clamp(10px,1.2vw,14px); text-transform: uppercase; }
 	.dottedlineSociallinks { display:none; width: 4px; height: auto;
 		.st0 	{ fill:#A57246; }
 	}
-	@media (min-width: @screen-md-min)	{ position: fixed; z-index: 999; top:120px; right:30px; margin:0; .flex-direction(column); .flex-wrap(nowrap);
-		i 	{ font-size:28px; }
+	@media (min-width: @screen-md-min)	{ position: fixed; z-index: 999; top:120px; right:1.4vw; margin:0; gap:1vw; .flex-direction(column); .flex-wrap(nowrap);
+		i 	{ font-size:clamp(22px,1.6vw,28px); }
 		.sociallinksText { width:auto; order:0; writing-mode: vertical-rl; text-orientation: mixed;.rotate(180deg); }
 		.dottedlineSociallinks { display: block; }
 	}

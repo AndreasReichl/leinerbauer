@@ -1,0 +1,32 @@
+{{ hashtag = hashtag_name ? hashtag_name : id  }}
+
+<section id="{{ hashtag }}" class="card {{ layoutvariant }} {{ card_class }}">
+	<div class="textMediabox">
+		<div class="mediabox" {{ if image_bg_color }}style="background-color:{{ image_bg_color }};"{{ /if }}>
+			{{ if video }}
+				{{ partial:elements/videoplayer }}
+			{{ else }}
+				{{ image }}
+					<img src="{{ glide:url :crop="crops:{{crops_size}}:crop" }}" alt="{{ alt }}" {{ if image_filter }}style="mix-blend-mode:{{image_filter}};"{{ /if }} />
+				{{ /image }}
+			{{ /if }}
+		</div>
+		<div class="textbox">
+			<div class="inner">
+				{{ if headline }}<{{ headline_type }} class="headline" {{ if headline_color }}style="color:{{ headline_color }}"{{ /if }}>{{ headline }}</{{ headline_type }}>{{ /if }}
+				{{ if subtitle }}<{{ subtitle_type }} class="subtitle" {{ if subtitle_color }}style="color:{{ subtitle_color }}"{{ /if }}>{{ subtitle }}</{{ subtitle_type }}>{{ /if }}
+				{{ if colcontent }}<div class="content">{{ colcontent }}</div>{{ /if }}
+				{{ if links }}
+					<div class="links">
+						{{ links }}
+							<a href="{{ button_link_feld }}" class="btn btn-{{ button_style }}{{ if button_icon }} has-icon{{ /if }}{{ if button_text }} has-text{{ /if }}" target="{{ button_target }}">
+								{{ if button_icon }}<div class="btnIcon">{{ button_icon }}</div>{{ /if }}
+								{{ button_text }}
+							</a>
+						{{ /links }}
+					</div>
+				{{ /if }}
+			</div>
+		</div>
+	</div>
+</section>

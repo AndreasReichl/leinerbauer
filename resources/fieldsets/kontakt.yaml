@@ -1,0 +1,218 @@
+title: Kontakt
+fields:
+  -
+    handle: firma
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Firma
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: position
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Position im Unternehmen'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: anrede
+    field:
+      options:
+        herr: Herr
+        frau: Frau
+        divers: Divers
+        egal: Egal
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      type: select
+      display: Anrede
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: titel
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Titel
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: vorname
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Vorname
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: nachname
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Nachname
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: strasse_hausnummer
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Strasse / Hausnummer'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: plz
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: PLZ
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: ort
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Ort
+      width: 66
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: telefon
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Telefon
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: telefax
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Telefax
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: mobil
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Mobil
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: email
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Email
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: website
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Website
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: Image
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: crops
+    field:
+      show_details: true
+      source: image
+      mode: manual
+      dimensions:
+        '1_1': '1:1'
+        '4_3': '4:3'
+        freeform: Freeform
+      type: image_cropper
+      display: 'Image Cropper'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

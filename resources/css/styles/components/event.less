@@ -1,0 +1,74 @@
+// out:false
+
+.event				{
+	.mediabox 		{ line-height: 0; }
+	.inner 			{ padding:30px; }
+	.headline,
+	.subtitle 	 	{ margin-bottom:20px; line-height: 1.2; word-break: break-word; }
+	.content 		{ margin-bottom:20px; line-height: 1.4; }
+	.links 			{ .flex-display(flex); .flex-wrap(wrap); gap:10px; }
+	@media (min-width: @screen-md-min) 	{
+		.inner 		{ padding:30px 0; }
+	}
+}
+
+.event1 				{ padding:30px 0;
+	.textMediabox 		{ .flex-display(flex); .flex-direction(column); }
+	.mediabox 			{ width:60%; }
+	.textbox 			{ width:100%; .flex-display(flex); .flex-direction(column); .justify-content(center); }
+	.inner 				{ padding:0; .flex-display(flex); .align-items(center); }
+	.lineelement 		{ width:100%; max-width:2.5vw; height:auto; display:none; }
+	.eventContent 		{ margin-left:30px; }
+
+	.nextDate 			{ text-transform: uppercase; font-weight:bold; letter-spacing:3px;  margin-bottom:5px; font-size:clamp(12px,2vw,16px); }
+	.eventDate 			{ .flex-display(flex); .align-items(flex-end); gap:10px; margin-bottom:10px; }
+	.dateDay 			{ font-weight: bold; font-size:clamp(18px,3vw,42px); color:var(--primary-color); }
+	.date 				{ font-weight: bold; font-size:clamp(18px,3vw,42px); }
+	.time 				{ font-weight: bold; }
+
+	.reservation 		{ .flex-display(flex); .flex-direction(column); .flex-wrap(wrap); gap:5px; font-size:clamp(12px,2vw,16px);
+		.titel 			{ text-transform: uppercase; font-weight:bold; }
+		.vertLine 		{ color:var(--primary-color); display: none; }
+	}
+	@media (min-width: 500px) 	{
+		.textMediabox 	{ .flex-direction(row); }
+		.mediabox 		{ width:35%; }
+		.textbox 		{ width:65%; }
+		.lineelement 	{ max-width:1.5vw; .flex-display(inline-flex);}
+	}
+	@media (min-width: 700px) 	{ padding:40px 0;
+		.mediabox 		{ width:30%; }
+		.textbox 		{ width:70%; }
+		.eventDate 		{ .flex-direction(row); gap:20px; }
+		.reservation 	{ .flex-direction(row); gap:15px;
+			.titel 		{ width:100%; }
+		}
+		.vertLine 		{ display: inline-block; }
+	}
+	@media (min-width: 980px) 	{
+		.mediabox 		{ width:20%; }
+		.textbox 		{ width:80%; }
+		.eventDate 		{ gap:30px; }
+		.reservation 	{
+			.titel 		{ width:auto; }
+		}
+	}
+}
+
+.event2 			{
+	@media (min-width: @screen-md-min) 	{
+		.textMediabox 	{ .flex-display(flex); }
+		.mediabox 		{ width:50%; order:1; }
+		.textbox 		{ width:50%; }
+		.inner 			{ padding:0 30px 0 0; }
+	}
+}
+
+.event3 		{
+	.textMediabox 	{ .flex-display(flex); .flex-direction(column); }
+	.mediabox 		{ order:1; }
+	@media (min-width: @screen-md-min) 	{
+		.inner 		{ padding:30px 0; }
+	}
+}
+
