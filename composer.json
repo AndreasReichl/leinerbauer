@@ -16,7 +16,7 @@
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
         "ndx/statamic-bard-color-picker": "^1.2",
-        "statamic/cms": "^4.0",
+        "statamic/cms": "4.50.0",
         "stoffelio/statamic-404-logger": "^1.0",
         "tv2regionerne/statamic-image-cropper": "^1.4",
         "webographen/statamic-admin-log": "^1.0"
