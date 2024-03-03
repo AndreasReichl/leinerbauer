@@ -114,11 +114,63 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              width: 50
+          -
+            handle: instagram_kontoname
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Instagram Kontoname'
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
           -
             handle: facebook
             field:
               type: link
               display: facebook
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              width: 50
+          -
+            handle: facebook_kontoname
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Facebook Kontoname'
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: whatsapp
+            field:
+              type: link
+              display: whatsapp
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              width: 50
+          -
+            handle: whatsapp_kontoname
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Whatsapp Kontoname'
+              width: 50
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -134,31 +186,15 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              width: 50
           -
-            handle: twitter
+            handle: youtube_kontoname
             field:
-              type: link
-              display: twitter
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: tiktok
-            field:
-              type: link
-              display: tiktok
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: whatsapp
-            field:
-              type: link
-              display: whatsapp
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Youtube Kontoname'
+              width: 50
               listable: hidden
               instructions_position: above
               visibility: visible

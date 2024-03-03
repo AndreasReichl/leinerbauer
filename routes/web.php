@@ -18,4 +18,3 @@ use Illuminate\Support\Facades\Route;
 // ]);
 
 Route::redirect('/admin', '/cp', 301);
-date_default_timezone_set('Europe/Berlin');

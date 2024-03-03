@@ -1,27 +1,67 @@
 // out:false
 
-.paragraph  		{
+.paragraph  		{ padding:60px 0;
+	.aboveheadline,
 	.headline,
-	.subtitle 	 	{ margin-bottom:20px; }
-	.content 		{ margin-bottom:20px; line-height: 1.4; }
+	.subtitle 	 	{
+		&.hand 		{ transform: skew(6deg, -6deg); }
+		&.script 	{ transform: skew(6deg, -6deg); margin-bottom:6vw; }
+	}
+	.aboveheadline 	{ margin-left: 2vw; }
+	.headline 		{ margin-left: -0.5vw; }
+	.content 		{ margin:20px 0; line-height: 1.4;
+		p 			{ margin-bottom:15px; display: inline-block; width: 100%; }
+	}
 	.links 			{ .flex-display(flex); .flex-wrap(wrap); gap:10px; }
+	.inner 			{ position:relative;
+		.themenicon 	{ line-height: 0; display:inline-block; width:auto; height:100%; max-height:10vw; min-height: 120px; position:absolute; left: 0; top:0; }
+	}
 	@media (max-width: @screen-sm-max)	{
 		.textMediabox { padding: 0 5vw; }
+	}
+	@media (min-width: @screen-md-min) 	{ padding:90px 0;
+		.aboveheadline,
+		.headline,
+		.subtitle 	 	{
+			&.script 	{ margin-bottom:3vw; }
+		}
+		.inner 			{ position:relative;
+			.themenicon { left: -10%; top:-6%; }
+		}
 	}
 }
 
 .paragraph1 {
 	@media (min-width: @screen-md-min) 	{
-		.textMediabox { .flex-display(flex); }
-		.mediabox { width:50%; }
-		.textbox { width:50%; }
+		.textMediabox 		{ .flex-display(flex); .align-items(center); }
+		.mediabox 			{ width:50%; }
+		.textbox 			{ width:50%;
+			.inner 			{ margin:0 60px; }
+		}
 	}
 }
 
 .paragraph2 {
 	@media (min-width: @screen-md-min) 	{
-		.textMediabox { .flex-display(flex); }
-		.mediabox { width:50%; }
-		.textbox { width:50%; }
+		.textMediabox { .flex-display(flex); .align-items(center); }
+		.mediabox { width:50%; order:1; }
+		.textbox { width:50%;
+			.inner 			{ margin:0 60px; }
+		}
+	}
+}
+
+
+.paragraphInvert 		{ background-color:var(--font-color); color:var(--white);
+	.inner 				{
+		.themenicon 	{ .opacity(0.5); }
+	}
+}
+
+
+.trenner_unten 			{ .flex-display(flex); .align-items(center); .justify-content(center); height:0; position: relative;
+	img 				{ line-height: 0; width:100%; max-width:15vw; min-width:200px; height:auto; position: absolute;  z-index: 2; top:100%; .translateY(-64%); }
+	@media (min-width: @screen-md-min) 	{
+		img 			{ margin-top: 0; }
 	}
 }

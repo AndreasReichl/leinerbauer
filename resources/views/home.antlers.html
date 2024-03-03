@@ -2,8 +2,5 @@
 	{{ partial:components/hero }}
 {{ /if }}
 {{ content }}
-<div class="containerFree">
-{{ events }}
-	{{ partial:elements/event }}
-{{ /events }}
-</div>
+    {{ partial src="components/absaetze/{type}" }}
+{{ /content }}

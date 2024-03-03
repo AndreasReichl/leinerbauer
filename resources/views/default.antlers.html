@@ -1,1 +1,6 @@
+{{ if hero_info || hero_image || hero_title || hero_subtitle }}
+	{{ partial:components/hero }}
+{{ /if }}
 {{ content }}
+    {{ partial src="components/absaetze/{type}" }}
+{{ /content }}

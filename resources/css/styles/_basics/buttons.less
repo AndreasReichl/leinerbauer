@@ -6,7 +6,7 @@
 @btn-font-weight:	normal;
 @cursor-disabled:	not-allowed;
 
-@btn-radius:		0px;
+@btn-radius:		4px;
 @btn-border-size:		1px;
 
 @btn-font-size-xs:	clamp(6px, 0.4vw, 10px);
@@ -18,8 +18,8 @@
 @btn-padding-sm:	15px 30px;
 
 @btn-font-size-md:	clamp(12px, 0.8vw, 14px);
-@btn-height-md:		32px;
-@btn-padding-md:	0 32px;
+@btn-height-md:		auto;
+@btn-padding-md:	8px 24px;
 
 @btn-font-size-lg:	clamp(16px, 1.0vw, 20px);
 @btn-height-lg:		auto;
@@ -63,9 +63,14 @@ a, .btn, .btn-link, .btn-text-link 		{
 	&.btn-lg		{ padding: @btn-padding-lg; font-size: @btn-font-size-lg; height: @btn-height-lg; border-radius: @btn-radius; }
 	&.btn-xl		{ padding: @btn-padding-xl; font-size: @btn-font-size-xl; height: @btn-height-xl; border-radius: @btn-radius; }
 	&.btn-circle    { .border-radius(999px); padding:0px; .btn-text { display:none; } }
-
+  .btnIcon    { .transition-all; }
   &.has-icon.has-text {
     .btnIcon { margin-right:10px; }
+  }
+  &:hover   {
+    &.has-icon.has-text {
+      .btnIcon { .rotate(-90deg); }
+    }
   }
 }
 
@@ -75,7 +80,7 @@ a, .btn, .btn-link, .btn-text-link 		{
 // --------------------------------------------------
 
 .btn-default      	{ color:var(--primary-color); border-color:var(--primary-color); background-color:var(--black); svg { fill:var(--primary-color); } &:hover { color: var(--white); svg { fill:var(--white); } } }
-.btn-primary      	{ color:var(--black); border-color:var(--primary-color); background-color:var(--primary-color); svg { fill:var(--black); } &:hover { color: var(--white); svg { fill:var(--white); } } }
+.btn-primary      	{ color:var(--white); border-color:var(--primary-color); background-color:var(--primary-color); svg { fill:var(--white); } &:hover { color: var(--white); svg { fill:var(--white); } } }
 .btn-secondary    	{ color:var(--white); border-color:var(--secondary-color); background-color:var(--secondary-color); svg { fill:var(--white); } &:hover { color: var(--white); svg { fill:var(--white); } } }
 .btn-third        	{ color:var(--white); border-color:var(--third-color); background-color:var(--third-color); svg { fill:var(--white); } &:hover { color: var(--white); svg { fill:var(--white); } } }
 .btn-fourth      	  { color:var(--white); border-color:var(--fourth-color); background-color:var(--fourth-color); svg { fill:var(--white); } &:hover { color: var(--white); svg { fill:var(--white); } } }

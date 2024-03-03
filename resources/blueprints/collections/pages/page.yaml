@@ -21,14 +21,60 @@ tabs:
               antlers: false
               hide_display: false
           -
-            handle: events
+            handle: content
             field:
-              mode: default
-              create: true
-              collections:
-                - events
-              type: entries
-              display: Events
+              collapse: true
+              previews: true
+              fullscreen: false
+              sets:
+                absaetze-z:
+                  display: Absätze
+                  instructions: null
+                  icon: dashboard-layout-3
+                  sets:
+                    event:
+                      display: Veranstaltungen
+                      instructions: null
+                      icon: media-ticket
+                      fields:
+                        -
+                          handle: events
+                          field:
+                            mode: default
+                            create: true
+                            collections:
+                              - events
+                            type: entries
+                            display: Events
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                    absatz:
+                      display: Absatz
+                      instructions: null
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          handle: artikel
+                          field:
+                            fields:
+                              -
+                                import: artikel
+                                prefix: artikel_
+                            mode: stacked
+                            reorderable: true
+                            fullscreen: true
+                            type: grid
+                            display: Artikel
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: Innhalt
               listable: hidden
               instructions_position: above
               visibility: visible

@@ -1,0 +1,54 @@
+<div class="container">
+{{ events }}
+	{{ hashtag = event_hashtag_name ? event_hashtag_name : id  }}
+	<section id="{{ hashtag }}" class="event event1 {{ event_class }}">
+		<div class="textMediabox">
+			<div class="mediabox" {{ if event_image_bg_color }}style="background-color:{{ event_image_bg_color }};"{{ /if }}>
+				{{ if event_video }}
+					{{ partial:elements/videoplayer }}
+				{{ else }}
+					{{ event_image }}
+						<img src="{{ glide:url :crop="crops:{{crops_size}}:crop" }}" alt="{{ alt }}" {{ if event_image_filter }}style="mix-blend-mode:{{event_image_filter}};"{{ /if }} />
+					{{ /event_image }}
+				{{ /if }}
+			</div>
+			<div class="textbox">
+				<div class="inner">
+					<div class="lineelement">
+						<img src="assets/lineelement_vertical_dark.svg" alt="lineelement" />
+					</div>
+					<div class="eventContent">
+						<div class="nextDate">Nächster Termin</div>
+						<div class="eventDate">
+							<span class="dateDay">{{ event_datum timezone='Europe/Berlin' iso_format="dddd" }}</span>
+							<span class="date">{{ event_datum format="d.m.Y" }}</span>
+							<span class="time">ab {{ event_uhrzeit }} Uhr</span>
+						</div>
+						<div class="reservation">
+							<span class="titel">Reservierung unter</span>
+							<span class="phone">Tel.: 0 96 02 / 68 04</span>
+							<span class="vertLine">|</span>
+							<span class="mobile">Handy: 0171 / 756 47 01</span>
+							<span class="vertLine">|</span>
+							<span class="email">Email: info@leinerbauer.de</span>
+						</div>
+						{{ if event_headline }}<{{ event_headline_type }} class="headline" {{ if event_headline_color }}style="color:{{ event_headline_color }}"{{ /if }}>{{ event_headline }}</{{ headline_type }}>{{ /if }}
+						{{ if event_subtitle }}<{{ event_subtitle_type }} class="subtitle" {{ if event_subtitle_color }}style="color:{{ event_subtitle_color }}"{{ /if }}>{{ event_subtitle }}</{{ subtitle_type }}>{{ /if }}
+						{{ if event_infotext }}<div class="content">{{ infotext }}</div>{{ /if }}
+						{{ if event_links }}
+							<div class="links">
+								{{ links }}
+									<a href="{{ button_link_feld }}" class="btn btn-{{ button_style }}{{ if button_icon }} has-icon{{ /if }}{{ if button_text }} has-text{{ /if }}" target="{{ button_target }}">
+										{{ if button_icon }}<div class="btnIcon">{{ button_icon }}</div>{{ /if }}
+										{{ button_text }}
+									</a>
+								{{ /links }}
+							</div>
+						{{ /if }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{{ /events }}
+</div>

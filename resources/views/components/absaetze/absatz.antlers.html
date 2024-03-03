@@ -1,0 +1,51 @@
+{{ artikel }}
+{{ hashtag = artikel_hashtag_name ? artikel_hashtag_name : id  }}
+
+<article id="{{ hashtag }}" class="paragraph {{ artikel_layoutvariant }} {{ artikel_paragraph_class }}">
+	<div class="container{{ artikel_full_width ? '-fluid' : '' }}">
+		<div class="textMediabox">
+			<div class="mediabox" {{ if image_bg_color }}style="background-color:{{ image_bg_color }};"{{ /if }}>
+				{{ if artikel_video }}
+					{{ partial:elements/videoplayer }}
+				{{ else }}
+					{{ artikel_image }}
+						<img src="{{ glide:url :crop="crops:{{artikel_crops_size}}:crop" }}" alt="{{ alt }}" {{ if artikel_image_filter }}style="mix-blend-mode:{{artikel_image_filter}};"{{ /if }} />
+					{{ /artikel_image }}
+				{{ /if }}
+			</div>
+			<div class="textbox">
+				<div class="inner">
+					{{ if artikel_themenbild }}
+						{{ artikel_themenbild }}
+							<img src="{{ url }}" alt="{{ alt }}" class="themenicon" />
+						{{ /artikel_themenbild }}
+					{{ /if }}
+					{{ if artikel_headline_above }}<{{ artikel_headline_above_type }} class="aboveheadline {{ artikel_headline_above_font }} {{ artikel_headline_above_weight }}" {{ if artikel_headline_above_color }}style="color:{{ artikel_headline_above_color }}"{{ /if }}>{{ artikel_headline_above }}</{{ artikel_headline_above_type }}>{{ /if }}
+					{{ if artikel_headline }}<{{ artikel_headline_type }} class="headline {{ artikel_headline_font }} {{ artikel_headline_weight }}" {{ if artikel_headline_color }}style="color:{{ artikel_headline_color }}"{{ /if }}>{{ artikel_headline }}</{{ artikel_headline_type }}>{{ /if }}
+					{{ if artikel_subtitle }}<{{ artikel_subtitle_type }} class="subtitle {{ artikel_subtitle_font }} {{ artikel_subtitle_weight }}" {{ if artikel_subtitle_color }}style="color:{{ artikel_subtitle_color }}"{{ /if }}>{{ artikel_subtitle }}</{{ artikel_subtitle_type }}>{{ /if }}
+					{{ if artikel_content }}<div class="content">{{ artikel_content }}</div>{{ /if }}
+					{{ if artikel_links }}
+						<div class="links">
+							{{ artikel_links }}
+								{{ partial:elements/button
+									:url='button_link_feld'
+									:style='button_style'
+									:target='button_zielseite'
+									:icon='button_icon'
+									:text='button_text'
+								}}
+							{{ /artikel_links }}
+						</div>
+					{{ /if }}
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+
+{{ if artikel_trenner_unten }}
+	<div class="trenner_unten">
+		<img src="assets/lbTrenner.svg" alt="lbTrenner" />
+	</div>
+{{ /if }}
+{{ /artikel }}

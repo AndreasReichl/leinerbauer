@@ -1,5 +1,105 @@
-title: Card
+title: Artikel
 fields:
+  -
+    handle: headline_above
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Headline above'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline_above_type
+    field:
+      options:
+        h1: H1
+        h2: H2
+        h3: H3
+        h4: H4
+        h5: H5
+        h6: H6
+        div: Div
+        span: Span
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: h4
+      type: select
+      display: 'Headline above Typ'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline_above_font
+    field:
+      options:
+        script: Skript
+        hand: Handschrift
+        standard: Standard
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: script
+      type: select
+      display: 'Headline above Font'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline_above_color
+    field:
+      swatches:
+        - '#A57246'
+        - '#14E7E7'
+        - '#572710'
+        - '#FFF8EF'
+        - '#965D35'
+      allow_any: true
+      type: color
+      display: 'Headline above color'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline_above_weight
+    field:
+      options:
+        bold: Fett
+        normal: Normal
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: bold
+      type: select
+      display: 'Headline above Weight'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
   -
     handle: headline
     field:
@@ -7,7 +107,6 @@ fields:
       antlers: false
       type: text
       display: Headline
-      width: 50
       listable: hidden
       instructions_position: above
       visibility: visible
@@ -41,6 +140,28 @@ fields:
       replicator_preview: true
       hide_display: false
   -
+    handle: headline_font
+    field:
+      options:
+        script: Skript
+        hand: Handschrift
+        standard: Standard
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: script
+      type: select
+      display: 'Headline Font'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
     handle: headline_color
     field:
       swatches:
@@ -59,13 +180,33 @@ fields:
       replicator_preview: true
       hide_display: false
   -
+    handle: headline_weight
+    field:
+      options:
+        bold: Fett
+        normal: Normal
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: bold
+      type: select
+      display: 'Headline Weight'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
     handle: subtitle
     field:
       input_type: text
       antlers: false
       type: text
       display: Subtitle
-      width: 50
       listable: hidden
       instructions_position: above
       visibility: visible
@@ -99,6 +240,28 @@ fields:
       replicator_preview: true
       hide_display: false
   -
+    handle: subtitle_font
+    field:
+      options:
+        script: Skript
+        hand: Handschrift
+        standard: Standard
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: standard
+      type: select
+      display: 'Subtitle Font'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
     handle: subtitle_color
     field:
       swatches:
@@ -117,7 +280,28 @@ fields:
       replicator_preview: true
       hide_display: false
   -
-    handle: colcontent
+    handle: subtitle_weight
+    field:
+      options:
+        bold: Fett
+        normal: Normal
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: bold
+      type: select
+      display: 'Subtitle Weight'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: content
     field:
       buttons:
         - h2
@@ -161,7 +345,7 @@ fields:
       collapse: false
       previews: true
       type: bard
-      display: Spalteninhalt
+      display: Inhalt
       listable: hidden
       instructions_position: above
       visibility: visible
@@ -179,6 +363,23 @@ fields:
       fullscreen: true
       type: grid
       display: Links
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: themenbild
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: Themenbild
+      instructions: 'Themenbild welches hinter der Überschrift angezeigt wird.'
       listable: hidden
       instructions_position: above
       visibility: visible
@@ -251,7 +452,7 @@ fields:
     handle: crops
     field:
       show_details: true
-      source: card_image
+      source: artikel_image
       mode: manual
       dimensions:
         freeform: Freeform
@@ -336,17 +537,17 @@ fields:
     handle: layoutvariant
     field:
       options:
-        card0: 'Bild oben Text unten'
-        card1: 'Bild links Text rechts'
-        card2: 'Bild rechts Text links'
-        card3: 'Bild unten Text oben'
+        paragraph0: 'Bild oben Text unten'
+        paragraph1: 'Bild links Text rechts'
+        paragraph2: 'Bild rechts Text links'
+        paragraph3: 'Bild unten Text oben'
       taggable: false
       push_tags: false
       multiple: false
       clearable: false
       searchable: true
       cast_booleans: false
-      default: card0
+      default: paragraph0
       type: select
       display: Darstellungsvariante
       instructions: 'Legt die Art der Darstellung des Eintrags fest.'
@@ -357,15 +558,26 @@ fields:
       replicator_preview: true
       hide_display: false
   -
-    handle: card_class
+    handle: paragraph_class
     field:
       input_type: text
       antlers: false
       type: text
-      display: 'Card Class'
+      display: 'Paragraph Class'
       listable: hidden
       instructions_position: above
       visibility: visible
       replicator_preview: true
       hide_display: false
       width: 50
+  -
+    handle: trenner_unten
+    field:
+      default: false
+      type: toggle
+      display: 'Trenner unten'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
