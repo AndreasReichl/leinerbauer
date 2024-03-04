@@ -9,8 +9,8 @@ event_crops_size: '4_3'
 event_full_width: false
 event_layoutvariant: card0
 updated_by: 8a836dbc-3945-44cc-b596-37a44f2c793e
-updated_at: 1709395758
-event_datum: '2024-06-02'
+updated_at: 1709554306
+event_datum: '2024-03-13'
 event_uhrzeit: '17:00'
 event_image: events/pizzaabend.png
 event_crops:

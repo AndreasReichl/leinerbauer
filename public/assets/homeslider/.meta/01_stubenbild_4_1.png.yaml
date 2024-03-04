@@ -1,4 +1,5 @@
-data: {  }
+data:
+  alt: 'Eventstube Innenansicht'
 size: 522685
 last_modified: 1709545291
 width: 1920

@@ -1,6 +1,11 @@
 {{ artikel }}
 {{ hashtag = artikel_hashtag_name ? artikel_hashtag_name : id  }}
 
+{{ if artikel_trenner_oben }}
+	<div class="trenner_oben">
+		<img src="assets/lineelement-light.svg" alt="lbTrennerOben" />
+	</div>
+{{ /if }}
 <article id="{{ hashtag }}" class="paragraph {{ artikel_layoutvariant }} {{ artikel_paragraph_class }}">
 	<div class="container{{ artikel_full_width ? '-fluid' : '' }}">
 		<div class="textMediabox">

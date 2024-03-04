@@ -59,6 +59,13 @@
 }
 
 
+.trenner_oben 			{ .flex-display(flex); .align-items(center); .justify-content(center); height:0; position: relative;
+	img 				{ line-height: 0; width:100%; max-width:12vw; min-width:200px; height:auto; position: absolute;  z-index: 2; top:100%; .translateY(-50%); }
+	@media (min-width: @screen-md-min) 	{
+		img 			{ margin-top: 0; }
+	}
+}
+
 .trenner_unten 			{ .flex-display(flex); .align-items(center); .justify-content(center); height:0; position: relative;
 	img 				{ line-height: 0; width:100%; max-width:15vw; min-width:200px; height:auto; position: absolute;  z-index: 2; top:100%; .translateY(-64%); }
 	@media (min-width: @screen-md-min) 	{
