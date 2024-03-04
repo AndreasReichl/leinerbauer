@@ -8,11 +8,12 @@
 	{{ /if }}
 
 	<div class="heroContent">
-		{{ if hero_title }}<h1>{{ hero_title }}</h1>{{ /if }}
-		{{ if hero_subtitle }}<h3>{{ hero_subtitle }}</h3>{{ /if }}
-		{{ if hero_info }}<p>{{ hero_info }} </p>{{ /if }}
+		{{ if hero_title_above }}<h3 class="hero_title_above">{{ hero_title_above }}</h3>{{ /if }}
+		{{ if hero_title }}<h1 class="hero_title">{{ hero_title }}</h1>{{ /if }}
+		{{ if hero_subtitle }}<h3 class="hero_subtitle">{{ hero_subtitle }}</h3>{{ /if }}
+		{{ if hero_info }}<div class="hero_info">{{ hero_info }}</div>{{ /if }}
 		{{ if hero_links }}
-		<div>
+		<div class="hero_links">
 			{{ hero_links }}
 				{{ partial:elements/button
 					:url='hero_link_feld'

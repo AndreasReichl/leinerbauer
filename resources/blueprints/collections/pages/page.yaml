@@ -126,6 +126,18 @@ tabs:
               hide_display: false
               width: 33
           -
+            handle: hero_title_above
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Oberüberschrift
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
             handle: hero_title
             field:
               input_type: text
@@ -243,6 +255,28 @@ tabs:
               show_set_alt: true
               type: assets
               display: Bilder
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: heroslideshow_ratio
+            field:
+              options:
+                auto: 'Höhe automatisch'
+                '16_9': '16:9'
+                '4_3': '4:3'
+                '4_1': '4:1'
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              default: '16_9'
+              type: select
+              display: Seitenverhältnis
               listable: hidden
               instructions_position: above
               visibility: visible
