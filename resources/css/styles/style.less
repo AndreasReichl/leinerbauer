@@ -94,6 +94,16 @@ ul  { margin:0; padding:0;
 	.heroContent 	{ position: absolute; top:50%; left:50%; .translate(-50%,-50%); text-align:center; }
 }
 
+// hero slideshow
+.heroslideshow 		{ position:relative; color:var(--white); width:100%; height:auto; max-width:90vw; margin:0px auto; .border-radius(8px); .box-shadow2; overflow:unset;
+	.swiper-slide 	{ width:100%; height:auto; overflow:hidden; aspect-ratio: 4/1;
+		.mediabox 	{ line-height:0; .border-radius(8px); overflow:hidden;
+			img 	{ line-height: 0; }
+		}
+	}
+	.swiper-pagination { width:auto; margin:0px auto; padding:8px 12px; background-color:var(--white); .border-radius(999px); .box-shadow2; overflow:hidden; position: absolute; left: 50%; bottom: -15px; .translateX(-50%); }
+}
+
 .containerFree 		{ width:100%; height:auto; max-width:90vw; margin:0px auto; }
 
 /* Filter - BOX */

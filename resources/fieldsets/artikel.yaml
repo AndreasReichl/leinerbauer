@@ -8,10 +8,11 @@ fields:
       type: text
       display: 'Headline above'
       listable: hidden
-      instructions_position: above
+      instructions_position: below
       visibility: visible
       replicator_preview: true
       hide_display: false
+      instructions: 'Kleine Überschrift über der Hauptüberschrift. z.B.: "Leinerbauern´s"'
   -
     handle: headline_above_type
     field:
@@ -52,7 +53,7 @@ fields:
       clearable: false
       searchable: true
       cast_booleans: false
-      default: script
+      default: hand
       type: select
       display: 'Headline above Font'
       width: 25
@@ -91,7 +92,7 @@ fields:
       clearable: false
       searchable: true
       cast_booleans: false
-      default: bold
+      default: normal
       type: select
       display: 'Headline above Weight'
       width: 25
@@ -112,6 +113,7 @@ fields:
       visibility: visible
       replicator_preview: true
       hide_display: false
+      instructions: 'Hauptüberschrift groß'
   -
     handle: headline_type
     field:
@@ -212,6 +214,7 @@ fields:
       visibility: visible
       replicator_preview: true
       hide_display: false
+      instructions: 'Text für den Untertitel'
   -
     handle: subtitle_type
     field:
@@ -351,6 +354,7 @@ fields:
       visibility: visible
       replicator_preview: true
       hide_display: false
+      instructions: 'Freies Feld für Texte, Links und Informationen.'
   -
     handle: links
     field:

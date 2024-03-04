@@ -20,28 +20,14 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 
-const swiper = new Swiper(".homeslider", {
+const swiper = new Swiper(".heroslideshow", {
 	autoplay: {
 		delay: 5000,
 		disableOnInteraction: false,
 	},
-	loop:true,
-	grabCursor: false,
-	speed: 1500,
-	effect: "creative",
-	creativeEffect: {
-			prev: {
-				shadow: true,
-				translate: ["-20%", 0, -1],
-			},
-			next: {
-				translate: ["100%", 0, 0],
-			},
-	},
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
+	grabCursor: true,
+	effect: "fade",
+	duration:5000,
 	pagination: {
 		el: ".swiper-pagination",
 	},

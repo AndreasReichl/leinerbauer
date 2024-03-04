@@ -3,6 +3,7 @@ tabs:
     display: Main
     sections:
       -
+        display: Grundeinstellung
         fields:
           -
             handle: title
@@ -12,7 +13,7 @@ tabs:
               validate:
                 - required
               display: Seitenname
-              instructions: 'Hier wird der Name der Seite festgelegt. Dieser Name wird nicht im template angezeigt.'
+              instructions: 'Hier wird der Name der Seite festgelegt. Dieser Name wird nicht im template angezeigt. Er dient nur zum anlegen der Seite und besseren Orientierung im Navigationsbaum.'
               instructions_position: above
               listable: hidden
               visibility: visible
@@ -20,6 +21,9 @@ tabs:
               input_type: text
               antlers: false
               hide_display: false
+      -
+        display: Seiteninhalte
+        fields:
           -
             handle: content
             field:
@@ -65,14 +69,16 @@ tabs:
                                 prefix: artikel_
                             mode: stacked
                             reorderable: true
-                            fullscreen: true
+                            fullscreen: false
                             type: grid
                             display: Artikel
                             listable: hidden
-                            instructions_position: above
+                            instructions_position: below
                             visibility: visible
                             replicator_preview: true
                             hide_display: false
+                            max_rows: 1
+                            instructions: 'Dieser Artikel stellt den kompletten Absatz mit den ausgefüllten Inhalten dar.'
               type: replicator
               display: Innhalt
               listable: hidden
@@ -102,6 +108,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              width: 66
           -
             handle: crops
             field:
@@ -109,11 +116,7 @@ tabs:
               source: hero_image
               mode: manual
               dimensions:
-                '16_9': 16/9
-                '4_3': 4/3
-                '4_2': 4/2
                 '4_1': 4/1
-                freeform: Freiform
               type: image_cropper
               display: 'Image Cropper'
               listable: hidden
@@ -121,6 +124,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              width: 33
           -
             handle: hero_title
             field:
@@ -217,6 +221,28 @@ tabs:
                           prefix: hero_
               type: replicator
               display: 'Hero Links'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  heroslideshow:
+    display: 'Hero Slideshow'
+    sections:
+      -
+        display: 'Slideshow Inhalt'
+        fields:
+          -
+            handle: heroslideshow_bilder
+            field:
+              mode: grid
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Bilder
               listable: hidden
               instructions_position: above
               visibility: visible
