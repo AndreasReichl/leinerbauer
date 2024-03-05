@@ -119,9 +119,9 @@ ul  { margin:0; padding:0;
 	@media (min-width: @screen-md-min) 	{  .flex-direction(row);
 		.heroContent 		{ width:40%;
 			.inner 			{ text-align:center; padding:2vw 0 0 0; .flex-direction(column); }
-			.heroThemenbild { position:relative; z-index:3; bottom:2vw; order:1; max-width:100%; }
+			.heroThemenbild { position:relative; z-index:3; top:-2vw; order:1; max-width:none; width:130%; left:50%; .translateX(-50%); }
 		}
-		.heroMedia 			{ width:60%; margin-top:0px; order:1; }
+		.heroMedia 			{ width:60%; margin-top:0px; order:1; z-index:1; }
 	}
 }
 

@@ -44,7 +44,8 @@
 			.addressLabel 	{ color:#E0CFBA; width:70px; }
 		}
 	}
-	.footerAddress 			{
+	.footerAddress 			{ text-align: center;
+		@media (min-width: @screen-md-min)	{ text-align: left; }
 		@media (min-width: @screen-lg-min)	{ .flex-display(flex); gap:40px; }
 	}
 }

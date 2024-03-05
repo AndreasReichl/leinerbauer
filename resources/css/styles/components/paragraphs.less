@@ -1,25 +1,49 @@
 // out:false
 
-.paragraph  		{ padding:60px 0;
+.paragraph  		{ padding:5vw 0;
 	.aboveheadline,
 	.headline,
 	.subtitle 	 	{
 		&.hand 		{ transform: skew(6deg, -6deg); }
-		&.script 	{ transform: skew(6deg, -6deg); margin-bottom:6vw; }
+		&.script 	{ transform: skew(6deg, -6deg); margin-bottom:6vw;
+			&.text-center,
+			&.text-right { margin-bottom:0; }
+		}
 	}
-	.aboveheadline 	{ margin-left: 2vw; }
-	.headline 		{ margin-left: -0.5vw; }
-	.content 		{ margin:20px 0; line-height: 1.4;
+	.aboveheadline 	{ margin-left: 2vw;
+		&.text-center { margin-left:0; }
+	}
+	.headline 		{ margin-left: -0.5vw;
+		&.text-center { margin-left:0; }
+	}
+	.content,
+	.more_content	{ margin:20px 0; line-height: 1.4;
 		p 			{ margin-bottom:15px; display: inline-block; width: 100%; }
 	}
 	.links 			{ .flex-display(flex); .flex-wrap(wrap); gap:10px; }
 	.inner 			{ position:relative;
 		.themenicon 	{ line-height: 0; display:inline-block; width:auto; height:100%; max-height:10vw; min-height: 120px; position:absolute; left: 0; top:0; }
 	}
+
+	.spalten_2_1 	{
+		.textelement_inhalt { position: relative;
+				.trenner_rechts { display:none; }
+			}
+		@media (min-width: @screen-md-min) 	{ .flex-display(flex); .flex-wrap(wrap);
+			.textelement_inhalt {
+				.trenner_rechts { position: absolute; width:2vw; top:50%; right:-1vw; .translateY(-50%); padding:0; display:block; }
+			}
+			.col 		{ width:50%;
+				>* 		{ padding: 0px 60px; }
+			}
+			.colFull	{ width:100%; }
+		}
+	}
+
 	@media (max-width: @screen-sm-max)	{
 		.textMediabox { padding: 0 5vw; }
 	}
-	@media (min-width: @screen-md-min) 	{ padding:90px 0;
+	@media (min-width: @screen-md-min) 	{ padding:3vw 0;
 		.aboveheadline,
 		.headline,
 		.subtitle 	 	{
@@ -32,7 +56,7 @@
 }
 
 .paragraph1 {
-	@media (min-width: @screen-md-min) 	{
+	@media (min-width: @screen-md-min) 	{ padding:6vw 0;
 		.textMediabox 		{ .flex-display(flex); .align-items(center); }
 		.mediabox 			{ width:50%; }
 		.textbox 			{ width:50%;
@@ -42,7 +66,7 @@
 }
 
 .paragraph2 {
-	@media (min-width: @screen-md-min) 	{
+	@media (min-width: @screen-md-min) 	{ padding:6vw 0;
 		.textMediabox { .flex-display(flex); .align-items(center); }
 		.mediabox { width:50%; order:1; }
 		.textbox { width:50%;

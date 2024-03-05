@@ -25,10 +25,24 @@
 							<img src="{{ url }}" alt="{{ alt }}" class="themenicon" />
 						{{ /artikel_themenbild }}
 					{{ /if }}
-					{{ if artikel_headline_above }}<{{ artikel_headline_above_type }} class="aboveheadline {{ artikel_headline_above_font }} {{ artikel_headline_above_weight }}" {{ if artikel_headline_above_color }}style="color:{{ artikel_headline_above_color }}"{{ /if }}>{{ artikel_headline_above }}</{{ artikel_headline_above_type }}>{{ /if }}
-					{{ if artikel_headline }}<{{ artikel_headline_type }} class="headline {{ artikel_headline_font }} {{ artikel_headline_weight }}" {{ if artikel_headline_color }}style="color:{{ artikel_headline_color }}"{{ /if }}>{{ artikel_headline }}</{{ artikel_headline_type }}>{{ /if }}
-					{{ if artikel_subtitle }}<{{ artikel_subtitle_type }} class="subtitle {{ artikel_subtitle_font }} {{ artikel_subtitle_weight }}" {{ if artikel_subtitle_color }}style="color:{{ artikel_subtitle_color }}"{{ /if }}>{{ artikel_subtitle }}</{{ artikel_subtitle_type }}>{{ /if }}
+					{{ if artikel_headline_above }}<{{ artikel_headline_above_type }} class="aboveheadline {{ artikel_headline_above_font }} {{ artikel_headline_above_weight }} text-{{ artikel_headline_above_align }}" {{ if artikel_headline_above_color }}style="color:{{ artikel_headline_above_color }}"{{ /if }}>{{ artikel_headline_above }}</{{ artikel_headline_above_type }}>{{ /if }}
+					{{ if artikel_headline }}<{{ artikel_headline_type }} class="headline {{ artikel_headline_font }} {{ artikel_headline_weight }} text-{{ artikel_headline_align }}" {{ if artikel_headline_color }}style="color:{{ artikel_headline_color }}"{{ /if }}>{{ artikel_headline }}</{{ artikel_headline_type }}>{{ /if }}
+					{{ if artikel_subtitle }}<{{ artikel_subtitle_type }} class="subtitle {{ artikel_subtitle_font }} {{ artikel_subtitle_weight }} text-{{ artikel_subtitle_align }}" {{ if artikel_subtitle_color }}style="color:{{ artikel_subtitle_color }}"{{ /if }}>{{ artikel_subtitle }}</{{ artikel_subtitle_type }}>{{ /if }}
 					{{ if artikel_content }}<div class="content">{{ artikel_content }}</div>{{ /if }}
+					{{ if artikel_more_content }}
+						<div class="more_content {{ artikel_more_content_class }}">
+							{{ artikel_more_content }}
+								<div class="textelement_inhalt {{ textelement_textelement_class }}">
+									<div class="">{{ textelement_inhalt }}</div>
+									{{ if textelement_trennlinie_rechts }}
+									<div class="trenner_rechts">
+										<img src="assets/lineelement_vertical_dark.svg" alt="lbTrennerRechts" />
+									</div>
+									{{ /if }}
+								</div>
+							{{ /artikel_more_content }}
+						</div>
+					{{ /if }}
 					{{ if artikel_links }}
 						<div class="links">
 							{{ artikel_links }}
