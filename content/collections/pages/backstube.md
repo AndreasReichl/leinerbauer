@@ -6,7 +6,7 @@ robots: 'index,follow'
 seo_title: 'Die Leinerbauern´s Hofbackstube mit unseren beiden Holzbacköfen.'
 seo_description: 'Entdecken Sie den einzigartigen Geschmack unserer handgefertigten Brote, gebacken mit gereiftem Natursauerteig in unseren traditionell gemauerten Holzbacköfen.'
 updated_by: 8a836dbc-3945-44cc-b596-37a44f2c793e
-updated_at: 1709649163
+updated_at: 1709649859
 hero_title: Backstube
 heroslideshow_ratio: '16_9'
 hero_title_above: Leinerbauern´s
@@ -251,7 +251,23 @@ content:
                 content:
                   -
                     type: text
-                    text: 'Seit 2007 backen wir unsere verschiedenen Brotsorten mit gereiftem Natursauerteig in unseren beiden gemauerten Holzbacköfen. Bei diesem Prozess setzen wir konsequent auf Qualität, indem wir auf Fertigmischungen und künstliche Backhilfen verzichten. Dies ermöglicht es uns, die Reinheit der natürlichen Lebensmittel zu bewahren. Das Ergebnis ist ein einzigartiger Geschmack, der nicht nur unverkennbar ist, sondern auch eine Haltbarkeit über mehrere Tage gewährleistet.'
+                    text: 'Seit 2007 backen wir unsere verschiedenen Brotsorten mit gereiftem Natursauerteig in unseren beiden gemauerten Holzbacköfen.'
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Bei diesem Prozess setzen wir konsequent auf Qualität, indem wir auf Fertigmischungen und künstliche Backhilfen verzichten. Dies ermöglicht es uns, die Reinheit der natürlichen Lebensmittel zu bewahren.'
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Das Ergebnis ist ein einzigartiger Geschmack, der nicht nur unverkennbar ist, sondern auch eine Haltbarkeit über mehrere Tage gewährleistet.'
             type: spalten1
             enabled: true
             textelement_textelement_class: col
@@ -304,12 +320,12 @@ content:
                 content:
                   -
                     type: text
-                    text: 'Mittwochs: Altenstadt a.d. Waldnaab - am Parkplatz ab 09:00 Uhr bis 12:30 Uhr'
+                    text: 'Mittwochs: Altenstadt a.d. Waldnaab - am Parkplatz ab 09:00 - 12:30 Uhr'
                   -
                     type: hardBreak
                   -
                     type: text
-                    text: 'Donnerstags: Bauernmarkt Grafenwöhr ab 09:00 Uhr bis 13:00 Uhr'
+                    text: 'Donnerstags: Bauernmarkt Grafenwöhr ab 09:00 - 13:00 Uhr'
               -
                 type: paragraph
                 attrs:

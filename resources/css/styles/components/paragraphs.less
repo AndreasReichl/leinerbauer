@@ -34,7 +34,10 @@
 				.trenner_rechts { position: absolute; width:2vw; top:50%; right:-1vw; .translateY(-50%); padding:0; display:block; }
 			}
 			.col 		{ width:50%;
-				>* 		{ padding: 0px 60px; }
+				>* 		{
+					&:first-child { padding: 0px 60px 0 0; }
+					&:last-child { padding: 0px 0 0 60px; }
+				}
 			}
 			.colFull	{ width:100%; }
 		}
