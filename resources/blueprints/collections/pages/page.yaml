@@ -90,6 +90,41 @@ tabs:
     display: Hero
     sections:
       -
+        display: 'Hero Layouteinstellungen'
+        fields:
+          -
+            handle: hero_layout
+            field:
+              options:
+                layout1: 'Text über Bild / Bilderslideshow'
+                layout2: 'Text links Bild / Bilderslideshow rechts'
+                layout3: 'Bilderslideshow ohne Text'
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              default: hero_layout1
+              type: select
+              display: 'Hero Layout'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: hintergrundschraege
+            field:
+              default: false
+              type: toggle
+              display: Hintergrundschräge
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
         display: Hero
         fields:
           -
@@ -238,11 +273,24 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
-  heroslideshow:
-    display: 'Hero Slideshow'
-    sections:
+          -
+            handle: hero_themenbild
+            field:
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Hero Themenbild'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
       -
-        display: 'Slideshow Inhalt'
+        display: Bilderslideshow
         fields:
           -
             handle: heroslideshow_bilder

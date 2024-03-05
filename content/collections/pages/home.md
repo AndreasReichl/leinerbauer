@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: home
 updated_by: 8a836dbc-3945-44cc-b596-37a44f2c793e
-updated_at: 1709572803
+updated_at: 1709628587
 robots: 'index,follow'
 seo_title: 'Leinerbauern´s Hofbackstube'
 seo_description: 'Wir bieten Brot und Backwaren sowie Pizza, Spareribs, Schweinshaxn und Braten aus dem Holzbackofen. In unserer urigen Eventstube kann mit bis zu 70 Personen gefeiert werden.'
@@ -37,7 +37,11 @@ image_cropper:
     width: 1920
     height: 1280
 crops:
-  '4_1': null
+  '4_1':
+    x: 0
+    'y': 400
+    width: 1920
+    height: 480
 events:
   - 65a12b0a-2d2f-49fc-9e59-86c7d09b323d
 absaetze:
@@ -107,6 +111,11 @@ heroslideshow_bilder:
   - homeslider/02_stubenbild_4_1.png
 ratio: '4_1'
 heroslideshow_ratio: '4_1'
+hero_layout: layout1
+hero_title_above: 'Servus beim'
+hero_title: Leinerbauer!
+hero_image:
+  - homeslider/neue_wirtsstube_ansicht_aussen.jpg
 content:
   -
     id: ltb9aa1a
