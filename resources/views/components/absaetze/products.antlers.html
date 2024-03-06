@@ -1,0 +1,42 @@
+<article id="{{ id }}" class="paragraph {{ artikel_paragraph_class }}">
+	<div class="container productsBgImage" {{ if hintergrundbild }}style="background-image: url({{ hintergrundbild }}{{ url }}{{ /hintergrundbild }});"{{ /if }}>
+		<div class="">
+			{{ if artikelhead_headline_above }}<{{ artikelhead_headline_above_type }} class="aboveheadline {{ artikelhead_headline_above_font }} {{ artikelhead_headline_above_weight }} text-{{ artikelhead_headline_above_align }}" {{ if artikelhead_headline_above_color }}style="color:{{ artikelhead_headline_above_color }}"{{ /if }}>{{ artikelhead_headline_above }}</{{ artikelhead_headline_above_type }}>{{ /if }}
+			{{ if artikelhead_headline }}<{{ artikelhead_headline_type }} class="headline {{ artikelhead_headline_font }} {{ artikelhead_headline_weight }} text-{{ artikelhead_headline_align }}" {{ if artikelhead_headline_color }}style="color:{{ artikelhead_headline_color }}"{{ /if }}>{{ artikelhead_headline }}</{{ artikelhead_headline_type }}>{{ /if }}
+			{{ if artikelhead_subtitle }}<{{ artikelhead_subtitle_type }} class="subtitle {{ artikelhead_subtitle_font }} {{ artikelhead_subtitle_weight }} text-{{ artikelhead_subtitle_align }}" {{ if artikelhead_subtitle_color }}style="color:{{ artikelhead_subtitle_color }}"{{ /if }}>{{ artikelhead_subtitle }}</{{ artikelhead_subtitle_type }}>{{ /if }}
+		</div>
+		<div class="productList">
+			{{ collection:produkte as="products"}}
+				{{ products }}
+					<div class="productEntry">
+						<div class="productImageWrapper">
+							<div class="productImage">
+							{{ if product_image }}
+								{{ product_image }}
+									<img src="{{ url }}" alt="{{ alt }}" />
+								{{ /product_image }}
+							{{ else }}
+								<img src="assets/lbTrenner.svg" class="nopic" alt="lbTrenner" />
+							{{ /if }}
+							</div>
+							<div class="productImageBackground"></div>
+						</div>
+						<div class="trenner_rechts">
+							<img src="assets/lineelement_vertical_dark.svg" alt="lbTrennerRechts" />
+						</div>
+						<div class="productContent">
+							<div class="inner">
+								<h3 class="productName"{{ if product_name_color }}style="color:{{ product_name_color }}"{{ /if }}>
+									{{ product_name }}
+								</h3>
+								{{ if product_info }}<div class="productInfo">{{ product_info }}</div>{{ /if }}
+								{{ if product_preis }}<span class="productPreis">{{ product_preis }}</span>{{ /if }}
+								{{ if product_gewicht }}<span class="productGewicht">{{ product_gewicht }}</span>{{ /if }}
+							</div>
+						</div>
+					</div>
+				{{ /products }}
+			{{ /collection:produkte }}
+		</div>
+	</div>
+</article>

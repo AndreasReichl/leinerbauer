@@ -10,3 +10,15 @@ preferences:
         - slug
         - status
       after_save: continue_editing
+  nav:
+    reorder: true
+    sections:
+      top_level: '@inherit'
+      module:
+        action: '@create'
+        display: Module
+        items:
+          'content::collections::events': '@move'
+          'content::collections::produkte': '@move'
+      content:
+        display: Global

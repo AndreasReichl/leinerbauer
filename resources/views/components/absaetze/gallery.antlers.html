@@ -1,0 +1,25 @@
+<article id="{{ id }}" class="paragraph {{ artikel_paragraph_class }}">
+	<div class="container productsBgImage" {{ if hintergrundbild }}style="background-image: url({{ hintergrundbild }}{{ url }}{{ /hintergrundbild }});"{{ /if }}>
+		<div class="">
+			{{ if gallery_headline_above }}<{{ gallery_headline_above_type }} class="aboveheadline {{ gallery_headline_above_font }} {{ gallery_headline_above_weight }} text-{{ gallery_headline_above_align }}" {{ if gallery_headline_above_color }}style="color:{{ gallery_headline_above_color }}"{{ /if }}>{{ gallery_headline_above }}</{{ gallery_headline_above_type }}>{{ /if }}
+			{{ if gallery_headline }}<{{ gallery_headline_type }} class="headline {{ gallery_headline_font }} {{ gallery_headline_weight }} text-{{ gallery_headline_align }}" {{ if gallery_headline_color }}style="color:{{ gallery_headline_color }}"{{ /if }}>{{ gallery_headline }}</{{ gallery_headline_type }}>{{ /if }}
+			{{ if gallery_subtitle }}<{{ gallery_subtitle_type }} class="subtitle {{ gallery_subtitle_font }} {{ gallery_subtitle_weight }} text-{{ gallery_subtitle_align }}" {{ if gallery_subtitle_color }}style="color:{{ gallery_subtitle_color }}"{{ /if }}>{{ gallery_subtitle }}</{{ gallery_subtitle_type }}>{{ /if }}
+		</div>
+		<div class="gallery">
+			{{ bilder }}
+				<div class="gallery-item"><img src="{{ url }}" alt="{{ alt }}" /></div>
+			{{ /bilder }}
+		</div>
+	</div>
+</article>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+	<span class="close">&times;</span>
+	<div class="modalContentWrapper">
+		<img class="modal-content" id="modalImage" alt="{{ alt }}">
+		<div id="modalCaption" class="modalCaption"></div>
+	</div>
+	<a class="prev" id="prevBtn">&#10094;</a>
+	<a class="next" id="nextBtn">&#10095;</a>
+</div>

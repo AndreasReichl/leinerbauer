@@ -1,0 +1,420 @@
+title: 'Artikel Head'
+fields:
+  -
+    handle: headline_above
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Headline above'
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      instructions: 'Kleine Überschrift über der Hauptüberschrift. z.B.: "Leinerbauern´s"'
+  -
+    handle: headline_above_align
+    field:
+      options:
+        left: linksbündig
+        center: zentriert
+        right: rechtsbündig
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: left
+      type: select
+      display: 'Headline above Align'
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline_above_type
+    field:
+      options:
+        h1: H1
+        h2: H2
+        h3: H3
+        h4: H4
+        h5: H5
+        h6: H6
+        div: Div
+        span: Span
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: h4
+      type: select
+      display: 'Headline above Typ'
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline_above_font
+    field:
+      options:
+        script: Skript
+        hand: Handschrift
+        standard: Standard
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: hand
+      type: select
+      display: 'Headline above Font'
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline_above_color
+    field:
+      swatches:
+        - '#A57246'
+        - '#14E7E7'
+        - '#572710'
+        - '#FFF8EF'
+        - '#965D35'
+      allow_any: true
+      type: color
+      display: 'Headline above color'
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline_above_weight
+    field:
+      options:
+        bold: Fett
+        normal: Normal
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: normal
+      type: select
+      display: 'Headline above Weight'
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Headline
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      instructions: 'Hauptüberschrift groß'
+  -
+    handle: headline_align
+    field:
+      options:
+        left: linksbündig
+        center: zentriert
+        right: rechtsbündig
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: left
+      type: select
+      display: 'Headline Align'
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline_type
+    field:
+      options:
+        h1: H1
+        h2: H2
+        h3: H3
+        h4: H4
+        h5: H5
+        h6: H6
+        div: Div
+        span: Span
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: h2
+      type: select
+      display: 'Headline Typ'
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline_font
+    field:
+      options:
+        script: Skript
+        hand: Handschrift
+        standard: Standard
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: script
+      type: select
+      display: 'Headline Font'
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline_color
+    field:
+      swatches:
+        - '#A57246'
+        - '#14E7E7'
+        - '#572710'
+        - '#FFF8EF'
+        - '#965D35'
+      allow_any: true
+      type: color
+      display: 'Headline color'
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: headline_weight
+    field:
+      options:
+        bold: Fett
+        normal: Normal
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: bold
+      type: select
+      display: 'Headline Weight'
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: subtitle
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Subtitle
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      instructions: 'Text für den Untertitel'
+  -
+    handle: subtitle_align
+    field:
+      options:
+        left: linksbündig
+        center: zentriert
+        right: rechtsbündig
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: left
+      type: select
+      display: 'Subtitle Align'
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: subtitle_type
+    field:
+      options:
+        h1: H1
+        h2: H2
+        h3: H3
+        h4: H4
+        h5: H5
+        h6: H6
+        div: Div
+        span: Span
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: h3
+      type: select
+      display: 'Subtitle Typ'
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: subtitle_font
+    field:
+      options:
+        script: Skript
+        hand: Handschrift
+        standard: Standard
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: standard
+      type: select
+      display: 'Subtitle Font'
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: subtitle_color
+    field:
+      swatches:
+        - '#A57246'
+        - '#14E7E7'
+        - '#572710'
+        - '#FFF8EF'
+        - '#965D35'
+      allow_any: true
+      type: color
+      display: 'Subtitle color'
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: subtitle_weight
+    field:
+      options:
+        bold: Fett
+        normal: Normal
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: bold
+      type: select
+      display: 'Subtitle Weight'
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: paragraph_class
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Paragraph Class'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      width: 50
+  -
+    handle: trenner_oben
+    field:
+      default: false
+      type: toggle
+      display: 'Trenner oben'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      width: 50
+  -
+    handle: full_width
+    field:
+      default: false
+      type: toggle
+      display: 'Absatzbreite über die gesamte Seite'
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: trenner_unten
+    field:
+      default: false
+      type: toggle
+      display: 'Trenner unten'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      width: 50

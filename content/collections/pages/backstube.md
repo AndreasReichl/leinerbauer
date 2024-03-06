@@ -6,7 +6,7 @@ robots: 'index,follow'
 seo_title: 'Die Leinerbauern´s Hofbackstube mit unseren beiden Holzbacköfen.'
 seo_description: 'Entdecken Sie den einzigartigen Geschmack unserer handgefertigten Brote, gebacken mit gereiftem Natursauerteig in unseren traditionell gemauerten Holzbacköfen.'
 updated_by: 8a836dbc-3945-44cc-b596-37a44f2c793e
-updated_at: 1709649859
+updated_at: 1709717641
 hero_title: Backstube
 heroslideshow_ratio: '16_9'
 hero_title_above: Leinerbauern´s
@@ -17,7 +17,7 @@ hero_themenbild:
   - themenbilder/01_brot.png
 heroslideshow_bilder:
   - backstubeslider/00_hofbackstube.jpg
-  - backstubeslider/01_hofbackstube.jpg
+  - 03_hofbackstube.jpg
   - backstubeslider/02_hofbackstube.jpg
 hintergrundschraege: true
 content:
@@ -443,31 +443,43 @@ content:
     type: absatz
     enabled: true
   -
-    id: ltegthhd
-    artikel:
-      -
-        id: ltegtibu
-        artikel_headline_above: Leinerbauern´s
-        artikel_headline_above_align: center
-        artikel_headline_above_type: h4
-        artikel_headline_above_font: hand
-        artikel_headline_above_color: '#A57246'
-        artikel_headline_above_weight: normal
-        artikel_headline: Brotsorten
-        artikel_headline_align: center
-        artikel_headline_type: h2
-        artikel_headline_font: script
-        artikel_headline_weight: normal
-        artikel_subtitle_align: left
-        artikel_subtitle_type: h3
-        artikel_subtitle_font: standard
-        artikel_subtitle_weight: bold
-        artikel_image_filter: normal
-        artikel_crops_size: freeform
-        artikel_layoutvariant: paragraph0
-        artikel_trenner_oben: false
-        artikel_full_width: false
-        artikel_trenner_unten: false
-    type: absatz
+    id: ltfh7hya
+    produktliste:
+      - d6fa1e11-a01d-4816-837a-098689abc84b
+    type: products
     enabled: true
+    hintergrundbild: brotkorblight.svg
+    head_headline_above: Leinerbauern´s
+    head_headline_above_align: center
+    head_headline_above_type: h4
+    head_headline_above_font: hand
+    head_headline_above_color: '#A57246'
+    head_headline_above_weight: normal
+    head_headline: Brotsorten
+    head_headline_align: center
+    head_headline_type: h2
+    head_headline_font: script
+    head_headline_weight: bold
+    head_subtitle_align: left
+    head_subtitle_type: h3
+    head_subtitle_font: standard
+    head_subtitle_weight: bold
+    artikelhead_headline_above: Leinerbauern´s
+    artikelhead_headline_above_align: center
+    artikelhead_headline_above_type: h4
+    artikelhead_headline_above_font: hand
+    artikelhead_headline_above_color: '#A57246'
+    artikelhead_headline_above_weight: normal
+    artikelhead_headline: Brotsorten
+    artikelhead_headline_align: center
+    artikelhead_headline_type: h2
+    artikelhead_headline_font: script
+    artikelhead_headline_weight: normal
+    artikelhead_subtitle_align: left
+    artikelhead_subtitle_type: h3
+    artikelhead_subtitle_font: standard
+    artikelhead_subtitle_weight: bold
+    artikelhead_trenner_oben: false
+    artikelhead_full_width: false
+    artikelhead_trenner_unten: false
 ---

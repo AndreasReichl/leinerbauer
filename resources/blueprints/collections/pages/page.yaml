@@ -79,6 +79,69 @@ tabs:
                             hide_display: false
                             max_rows: 1
                             instructions: 'Dieser Artikel stellt den kompletten Absatz mit den ausgefüllten Inhalten dar.'
+                    products:
+                      display: Produkte
+                      instructions: null
+                      icon: layout-display-split-quarters
+                      fields:
+                        -
+                          import: artikelhead
+                          prefix: artikelhead_
+                        -
+                          handle: produktliste
+                          field:
+                            mode: default
+                            create: true
+                            collections:
+                              - produkte
+                            type: entries
+                            display: Produktliste
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: hintergrundbild
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: Hintergrundbild
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                    gallery:
+                      display: Bildergalerie
+                      instructions: null
+                      icon: media-image-picture-gallery
+                      fields:
+                        -
+                          import: artikelhead
+                          prefix: gallery_
+                        -
+                          handle: bilder
+                          field:
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: Bilder
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
               type: replicator
               display: Innhalt
               listable: hidden
