@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f698d55be7c8c3efb0711b86d83a7e55",
+    "content-hash": "61b92e6c3eecd1a3638f1833dc52b852",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -8335,6 +8335,63 @@
                 }
             ],
             "time": "2024-01-23T14:51:35+00:00"
+        },
+        {
+            "name": "takepart-media/statamic-oreos",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/takepart-media/statamic-oreos.git",
+                "reference": "c080778b6de3d1232b28dba7bf85ff8be2c527e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/takepart-media/statamic-oreos/zipball/c080778b6de3d1232b28dba7bf85ff8be2c527e4",
+                "reference": "c080778b6de3d1232b28dba7bf85ff8be2c527e4",
+                "shasum": ""
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Oreos",
+                    "description": "Cookie consent manager for Statamic 3"
+                },
+                "laravel": {
+                    "providers": [
+                        "Takepart\\Oreos\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Takepart\\Oreos\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Dennis Dick",
+                    "email": "dick@takepart-media.de",
+                    "homepage": "https://www.takepart-media.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jakob Ploens",
+                    "email": "jploens@takepart-media.de",
+                    "homepage": "https://www.takepart-media.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Cookie consent manager for Statamic 3",
+            "support": {
+                "email": "it@takepart-media.de",
+                "issues": "https://github.com/takepart-media/statamic-oreos/issues",
+                "source": "https://github.com/takepart-media/statamic-oreos/tree/v1.3.0"
+            },
+            "time": "2022-12-21T14:54:35+00:00"
         },
         {
             "name": "thecodingmachine/safe",
