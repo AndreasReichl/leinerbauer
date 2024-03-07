@@ -7,7 +7,7 @@ hintergrundschraege: true
 heroslideshow_ratio: '16_9'
 robots: 'index,follow'
 updated_by: 8a836dbc-3945-44cc-b596-37a44f2c793e
-updated_at: 1709726062
+updated_at: 1709799276
 hero_title_above: Leinerbauern´s
 hero_title: Eventstube
 hero_themenbild:
@@ -148,14 +148,20 @@ content:
     gallery_full_width: false
     gallery_trenner_unten: false
     bilder:
-      - backstubeslider/00_hofbackstube.jpg
-      - backstubeslider/01_hofbackstube.jpg
-      - backstubeslider/02_hofbackstube.jpg
-      - blume.png
-      - bauernbrot.png
-      - 01_eventstube.jpg
-      - 02_eventstube.jpg
-      - 03_eventstube.jpg
+      - impressionen/00_lb_eventstube.jpg
+      - impressionen/01_lb_eventstube.jpg
+      - impressionen/02_lb_eventstube.jpg
+      - impressionen/03_lb_eventstube.jpg
+      - impressionen/04_lb_eventstube.jpg
+      - impressionen/05_lb_eventstube.jpg
+      - 06_lb_eventstube.jpg
+      - 07_lb_eventstube.jpg
+      - 08_lb_eventstube.jpg
+      - 09_lb_eventstube.jpg
+      - 10_lb_eventstube.jpg
+      - 11_lb_eventstube.jpg
+      - 12_lb_eventstube.jpg
+      - 13_lb_eventstube.jpg
     type: gallery
     enabled: true
 ---

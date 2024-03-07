@@ -1,6 +1,6 @@
 // out:false
 
-.paragraph  		{ padding:5vw 0;
+.paragraph  		{ padding:15vw 0;
 	.aboveheadline,
 	.headline,
 	.subtitle 	 	{
@@ -78,10 +78,25 @@
 	}
 }
 
+.paragraph3 {
+	.textMediabox 		{ .flex-display(flex); .flex-direction(column);
+		.mediabox 		{ order:1; }
+	}
+}
+
+
 
 .paragraphInvert 		{ background-color:var(--font-color); color:var(--white);
 	.inner 				{
 		.themenicon 	{ .opacity(0.5); }
+	}
+}
+
+.infoSmall 				{
+	.content,
+	.more_content	{
+		@media (min-width: @screen-md-min) 	{ margin:20px auto; max-width:50vw; }
+		@media (min-width: @screen-xl-min) 	{ margin:20px auto; max-width:40vw; }
 	}
 }
 

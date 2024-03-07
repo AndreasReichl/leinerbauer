@@ -13,15 +13,14 @@
 }
 
 .event1 				{ padding:30px 0;
-	.textMediabox 		{ .flex-display(flex); .flex-direction(column); }
-	.mediabox 			{ width:60%; }
-	.textbox 			{ width:100%; .flex-display(flex); .flex-direction(column); .justify-content(center); }
+	.textMediabox 		{ .flex-display(flex); }
+	.mediabox 			{ width:50%; }
+	.textbox 			{ width:50%; .flex-display(flex); .flex-direction(column); .justify-content(center); }
 	.inner 				{ padding:0; .flex-display(flex); .align-items(center); }
 	.lineelement 		{ width:100%; max-width:2.5vw; height:auto; display:none; }
-	.eventContent 		{ margin-left:30px; }
 
 	.nextDate 			{ text-transform: uppercase; font-weight:bold; letter-spacing:3px;  margin-bottom:5px; font-size:clamp(12px,2vw,16px); }
-	.eventDate 			{ .flex-display(flex); .align-items(flex-end); gap:10px; margin-bottom:10px; }
+	.eventDate 			{ .flex-display(flex); .flex-direction(column); gap:5px; margin-bottom:10px; }
 	.dateDay 			{ font-weight: bold; font-size:clamp(18px,3vw,42px); color:var(--primary-color); }
 	.date 				{ font-weight: bold; font-size:clamp(18px,3vw,42px); }
 	.time 				{ font-weight: bold; }
@@ -34,7 +33,9 @@
 		.textMediabox 	{ .flex-direction(row); }
 		.mediabox 		{ width:35%; }
 		.textbox 		{ width:65%; }
-		.lineelement 	{ max-width:1.5vw; .flex-display(inline-flex);}
+		.lineelement 	{ max-width:1.5vw; .flex-display(inline-flex); }
+		.eventContent 	{ margin-left:30px; }
+		.eventDate 		{ .flex-direction(row); .align-items(flex-end); gap:10px; }
 	}
 	@media (min-width: 700px) 	{ padding:40px 0;
 		.mediabox 		{ width:30%; }

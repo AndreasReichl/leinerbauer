@@ -142,6 +142,45 @@ tabs:
                             visibility: visible
                             replicator_preview: true
                             hide_display: false
+                    essen:
+                      display: Essen
+                      instructions: null
+                      icon: text-formatting-image-left
+                      fields:
+                        -
+                          import: artikelhead
+                          prefix: artikelhead_
+                        -
+                          handle: eintraege
+                          field:
+                            mode: default
+                            create: true
+                            type: entries
+                            display: Einträge
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            collections:
+                              - essen
+                        -
+                          handle: hintergrundbild
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: Hintergrundbild
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
               type: replicator
               display: Innhalt
               listable: hidden
@@ -214,7 +253,10 @@ tabs:
               source: hero_image
               mode: manual
               dimensions:
-                '4_1': 4/1
+                '16_9': '16:9'
+                '4_3': '4:3'
+                '4_1': '4:1'
+                freeform: Freeform
               type: image_cropper
               display: 'Image Cropper'
               listable: hidden
@@ -223,6 +265,28 @@ tabs:
               replicator_preview: true
               hide_display: false
               width: 33
+          -
+            handle: seitenverhaeltnis_singleimage
+            field:
+              options:
+                auto: 'Höhe automatisch'
+                '16_9': '16:9'
+                '4_3': '4:3'
+                '4_1': '4:1'
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              default: '16_9'
+              type: select
+              display: Seitenverhältnis
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
           -
             handle: hero_title_above
             field:

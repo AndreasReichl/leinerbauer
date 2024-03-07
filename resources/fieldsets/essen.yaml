@@ -1,0 +1,169 @@
+title: Essen
+fields:
+  -
+    handle: name
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Name
+      width: 75
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: name_color
+    field:
+      swatches:
+        - '#A57246'
+        - '#14E7E7'
+        - '#572710'
+        - '#FFF8EF'
+        - '#965D35'
+      allow_any: true
+      type: color
+      display: 'Name color'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: subtitle
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Subtitle
+      width: 75
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: subtitle_color
+    field:
+      swatches:
+        - '#A57246'
+        - '#14E7E7'
+        - '#572710'
+        - '#FFF8EF'
+        - '#965D35'
+      allow_any: true
+      type: color
+      display: 'Subtitle color'
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: info
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - color
+        - h4
+        - h5
+        - h6
+        - underline
+        - strikethrough
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+      smart_typography: false
+      save_html: false
+      inline: false
+      toolbar_mode: fixed
+      reading_time: false
+      word_count: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      remove_empty_nodes: false
+      antlers: false
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      always_show_set_button: false
+      collapse: false
+      previews: true
+      type: bard
+      display: Info
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: image
+    field:
+      max_files: 1
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: Image
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: essen_class
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Essen Class'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      width: 50
+  -
+    handle: layoutvariant
+    field:
+      options:
+        card0: 'Bild oben Text unten'
+        card1: 'Bild links Text rechts'
+        card2: 'Bild rechts Text links'
+        card3: 'Bild unten Text oben'
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: card1
+      type: select
+      display: Darstellungsvariante
+      instructions: 'Legt die Art der Darstellung des Eintrags fest.'
+      width: 50
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

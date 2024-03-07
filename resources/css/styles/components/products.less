@@ -1,25 +1,30 @@
 // out:false
 
-.productsBgImage 	{ background-repeat:no-repeat; background-size:70% auto; background-position:center center; }
+.productsBgImage 	{ background-repeat:no-repeat; background-size:70% auto; background-position:center center; background-attachment: fixed; }
 .productList 		{  padding:60px 0;
 	@media (min-width: @screen-md-min) 	{ .flex-display(flex); .flex-wrap(wrap);
 		>* 			{ width:50%; }
 	}
 }
 
+.productListFull	 { padding:60px 0 0 0;
+	@media (min-width: @screen-md-min) 	{ padding:60px 0; }
+}
+
 .productEntry 					{ .flex-display(flex); .align-items(center); margin-bottom:30px;
-	.productImageWrapper		{ width:40%; aspect-ratio: 1/1;.flex-display(flex); .align-items(center); height:auto; position: relative; }
-	.productImage				{ position:relative; z-index:1; width:100%; aspect-ratio: 4/3; height:auto; .flex-display(flex); .align-items(center); .justify-content(center);
-		.nopic 					{ width:100%; height:auto; max-width: 50%; }
+	.productImageWrapper		{ width:40%; aspect-ratio: 1/1;.flex-display(flex); .align-items(center); height:auto; position: relative;
+		.productImage			{ position:relative; z-index:1; width:100%; aspect-ratio: 4/3; height:auto; .flex-display(flex); .align-items(center); .justify-content(center);
+			.nopic 				{ width:100%; height:auto; max-width: 50%; }
+		}
+		.productImageBackground { position: absolute; z-index:0; top:50%; left:50%; .translate(-50%,-50%); .box-shadow2; width:100%; height:80%; .border-radius(8px); border:2px solid var(--secondary-color); background-color: var(--font-color); }
 	}
-	.productImageBackground 	{ position: absolute; z-index:0; top:50%; left:50%; .translate(-50%,-50%); .box-shadow2; width:80%; height:80%; .border-radius(8px); border:2px solid var(--secondary-color); background-color: var(--font-color); }
 	.trenner_rechts 			{ width:5%;
 		img 					{ width:100%; height:auto; max-height: 8vw; min-height: 100px; padding:0; display:block; }
 	}
 	.productContent 			{ width:55%;
 		.inner 					{ padding:0 20px; }
 		.productName 			{ font-weight: bold; margin-bottom:5px; }
-		.productInfo 			{ font-weight: 500; font-size:clamp(12px,2vw,14px); color:var(--primary-color); margin-bottom:15px; }
+		.productInfo 			{ font-weight: 500; font-size:clamp(12px,2vw,14px); color:var(--primary-color); margin:15px 0; }
 		.productPreis 			{ font-size:clamp(16px,2vw,20px); font-weight: bold; margin-right:20px; }
 		.productGewicht 		{ font-weight: bold; color:var(--primary-color); }
 	}
@@ -27,6 +32,56 @@
 	@media (min-width: @screen-md-min) 	{
 		.productContent 		{
 			.inner 				{ padding:0 40px 0 20px; }
+		}
+	}
+}
+
+
+.productEntry2 					{
+
+	.productImageWrapper		{ width:90vw; height:auto; position: relative; margin:0px auto;
+		.productImage			{ position:relative; z-index:1; width:100%; height:auto; .flex-display(flex); .align-items(center); .justify-content(center);
+			.pic 				{ .box-shadow2; .border-radius(8px); border:2px solid var(--secondary-color); background-color: var(--font-color); }
+			.nopic 				{ width:100%; height:auto; max-width: 50%; }
+		}
+		.productImageBackground { .flex-display(flex); .align-items(center); .justify-content(center); .box-shadow2; width:100%; height:auto; aspect-ratio:16/9; .border-radius(8px); border:2px solid var(--secondary-color); background-color: var(--font-color); }
+	}
+	.trenner_rechts 			{ display:none;
+		img 					{ width:100%; height:auto; max-height: 8vw; min-height: 100px; padding:0; display:block; }
+	}
+	.productContent 			{
+		.inner 					{ padding:40px 40px 10px 40px; }
+		.productName,
+		.productSubtitle		{ font-weight: bold; margin-bottom:5px; }
+		.productInfo 			{ font-weight: 500; color:var(--primary-color); margin:15px 0;
+			p 					{ padding:5px 0; }
+		}
+		.productPreis 			{ font-size:clamp(16px,2vw,20px); font-weight: bold; margin-right:20px; }
+		.productGewicht 		{ font-weight: bold; color:var(--primary-color); }
+	}
+
+	@media (min-width: @screen-md-min) 	{ margin-bottom:30px;
+		.trenner_rechts 			{ display:block; }
+		&.card0 					{
+			.productImageWrapper	{ width:100%; }
+			.trenner_rechts 		{ width:5%; .rotate(90deg); margin:0px auto; }
+			.productContent 		{
+				.inner 				{ padding:40px 20px; }
+			}
+		}
+		&.card1 					{ .flex-display(flex); .align-items(center);
+			.productImageWrapper	{ width:47.5%; }
+			.trenner_rechts 		{ width:5%; }
+			.productContent 		{ width:47.50%;
+				.inner 				{ padding:0 40px 0 20px; }
+			}
+		}
+		&.card2 					{ .flex-display(flex); .align-items(center);
+			.productImageWrapper	{ width:47.5%; order:2; }
+			.trenner_rechts 		{ width:5%; order:1; }
+			.productContent 		{ width:47.5%;
+				.inner 				{ padding:0 20px 0 40px; }
+			}
 		}
 	}
 }

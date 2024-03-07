@@ -14,11 +14,17 @@ preferences:
     reorder: true
     sections:
       top_level: '@inherit'
+      seiten:
+        action: '@create'
+        display: Seiten
+        items:
+          'content::collections::pages': '@move'
       module:
         action: '@create'
         display: Module
         items:
           'content::collections::events': '@move'
           'content::collections::produkte': '@move'
+          'content::collections::essen': '@move'
       content:
         display: Global

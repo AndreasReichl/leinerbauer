@@ -9,7 +9,7 @@
 				{{ if hero_image }}
 					<div class="heroImage">
 						{{ hero_image }}
-							<img src="{{ glide:url :crop="crops:4_1:crop" }}" alt="{{ alt }}" />
+							<img src="{{ glide:url :crop="crops:{{ seitenverhaeltnis_singleimage }}:crop" }}" alt="{{ alt }}" />
 						{{ /hero_image }}
 					</div>
 				{{ /if }}
@@ -88,7 +88,7 @@
 					{{ if hero_image }}
 						<div class="heroImage">
 							{{ hero_image }}
-								<img src="{{ glide:url :crop="crops:4_1:crop" }}" alt="{{ alt }}" />
+								<img src="{{ glide:url :crop="crops:{{ seitenverhaeltnis_singleimage }}:crop" }}" alt="{{ alt }}" class="{{ seitenverhaeltnis_singleimage }}"/>
 							{{ /hero_image }}
 						</div>
 					{{ /if }}
