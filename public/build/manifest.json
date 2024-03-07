@@ -1,0 +1,79 @@
+{
+  "resources/assets/bgDots.png": {
+    "file": "assets/bgDots-2d84df6a.png",
+    "src": "resources/assets/bgDots.png"
+  },
+  "resources/assets/lineelement.svg": {
+    "file": "assets/lineelement-cd4a816f.svg",
+    "src": "resources/assets/lineelement.svg"
+  },
+  "resources/css/site.css": {
+    "file": "assets/site-36516ffc.css",
+    "isEntry": true,
+    "src": "resources/css/site.css"
+  },
+  "resources/fonts/arkipelago/Arkipelago.woff2": {
+    "file": "assets/Arkipelago-29f6949c.woff2",
+    "src": "resources/fonts/arkipelago/Arkipelago.woff2"
+  },
+  "resources/fonts/icofont/icofont.woff": {
+    "file": "assets/icofont-3809c600.woff",
+    "src": "resources/fonts/icofont/icofont.woff"
+  },
+  "resources/fonts/icofont/icofont.woff2": {
+    "file": "assets/icofont-33040ad8.woff2",
+    "src": "resources/fonts/icofont/icofont.woff2"
+  },
+  "resources/fonts/montserrat/montserrat-v26-latin-100.woff2": {
+    "file": "assets/montserrat-v26-latin-100-7c17b7af.woff2",
+    "src": "resources/fonts/montserrat/montserrat-v26-latin-100.woff2"
+  },
+  "resources/fonts/montserrat/montserrat-v26-latin-200.woff2": {
+    "file": "assets/montserrat-v26-latin-200-0fc086f2.woff2",
+    "src": "resources/fonts/montserrat/montserrat-v26-latin-200.woff2"
+  },
+  "resources/fonts/montserrat/montserrat-v26-latin-300.woff2": {
+    "file": "assets/montserrat-v26-latin-300-5a117249.woff2",
+    "src": "resources/fonts/montserrat/montserrat-v26-latin-300.woff2"
+  },
+  "resources/fonts/montserrat/montserrat-v26-latin-500.woff2": {
+    "file": "assets/montserrat-v26-latin-500-b52de708.woff2",
+    "src": "resources/fonts/montserrat/montserrat-v26-latin-500.woff2"
+  },
+  "resources/fonts/montserrat/montserrat-v26-latin-700.woff2": {
+    "file": "assets/montserrat-v26-latin-700-a60b1ba9.woff2",
+    "src": "resources/fonts/montserrat/montserrat-v26-latin-700.woff2"
+  },
+  "resources/fonts/montserrat/montserrat-v26-latin-800.woff2": {
+    "file": "assets/montserrat-v26-latin-800-5b29b79d.woff2",
+    "src": "resources/fonts/montserrat/montserrat-v26-latin-800.woff2"
+  },
+  "resources/fonts/montserrat/montserrat-v26-latin-900.woff2": {
+    "file": "assets/montserrat-v26-latin-900-09d39f49.woff2",
+    "src": "resources/fonts/montserrat/montserrat-v26-latin-900.woff2"
+  },
+  "resources/fonts/montserrat/montserrat-v26-latin-regular.woff2": {
+    "file": "assets/montserrat-v26-latin-regular-4b5816bb.woff2",
+    "src": "resources/fonts/montserrat/montserrat-v26-latin-regular.woff2"
+  },
+  "resources/fonts/signatra/Signatra.woff": {
+    "file": "assets/Signatra-ff2f81f0.woff",
+    "src": "resources/fonts/signatra/Signatra.woff"
+  },
+  "resources/fonts/signatra/Signatra.woff2": {
+    "file": "assets/Signatra-d435bf94.woff2",
+    "src": "resources/fonts/signatra/Signatra.woff2"
+  },
+  "resources/js/site.css": {
+    "file": "assets/site-7399ad2e.css",
+    "src": "resources/js/site.css"
+  },
+  "resources/js/site.js": {
+    "css": [
+      "assets/site-7399ad2e.css"
+    ],
+    "file": "assets/site-077a536a.js",
+    "isEntry": true,
+    "src": "resources/js/site.js"
+  }
+}

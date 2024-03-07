@@ -172,7 +172,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff8ef",endCo
 
 
 /* on scroll */
-.headerBg 	{ position: fixed; top:-240px; height:200px; .bgGradientHeader; z-index:2; left:0; right:0; .opacity(0); .transition-smooth; }
+.headerBg 	{ position: fixed; top:-120px; height:80px; .bgGradientHeader; z-index:2; left:0; right:0; .opacity(0); .transition-smooth;
+	@media (min-width: @screen-md-min) 	{ top:-240px; height:200px; }
+}
 .scrolled {
 	.headerBg { top:0; .opacity(1); }
 }
