@@ -116,15 +116,16 @@ document.querySelectorAll('.dropdown [data-dropdown-id]').forEach(function(dropd
 import Masonry from 'masonry-layout';
 
 document.addEventListener('DOMContentLoaded', function() {
-    const galleries = document.querySelectorAll('.gallery');
-
-    galleries.forEach(function(gallery) {
-        const msnry = new Masonry(gallery, {
-            itemSelector: '.gallery-item',
-            columnWidth: '.gallery-item',
-            percentPosition: true
+    window.onload = function() {
+        const galleries = document.querySelectorAll('.gallery');
+        galleries.forEach(function(gallery) {
+            const msnry = new Masonry(gallery, {
+                itemSelector: '.gallery-item',
+                columnWidth: '.gallery-item',
+                percentPosition: true
+            });
         });
-    });
+    };
 });
 
 document.addEventListener('DOMContentLoaded', function() {
