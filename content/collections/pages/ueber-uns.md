@@ -14,7 +14,7 @@ hero_themenbild:
 heroslideshow_ratio: '16_9'
 robots: 'index,follow'
 updated_by: 8a836dbc-3945-44cc-b596-37a44f2c793e
-updated_at: 1709816101
+updated_at: 1709878302
 seo_title: 'Die Familie Reichl und Hösl - Hausname: Leinerbauer'
 seo_description: 'Seit 2007 von Beate und Johann Hösl gegründet, wird das Unternehmen seit dem 01.01.2024 von Kerstin Reichl als Inhaberin geleitet.'
 content:
@@ -54,7 +54,7 @@ content:
             content:
               -
                 type: text
-                text: 'Seit 2007 von Beate und Johann Hösl gegründet, wird das Unternehmen seit dem 01.01.2024 von Kerstin Reichl als Inhaberin geleitet. In idyllischer Lage in der nördlichen Oberpfalz, am Fuße der Marktgemeinde Parkstein in der Oed 3 im Landkreis Neustadt an der Waldnaab, finden Sie uns direkt mitten im Grünen.'
+                text: 'Seit 2007 von Beate und Johann Hösl gegründet, wird das Unternehmen seit dem 01.01.2024 von Tochter Kerstin Reichl als Inhaberin geleitet. In idyllischer Lage in der nördlichen Oberpfalz, am Fuße der Marktgemeinde Parkstein in der Oed 3 im Landkreis Neustadt an der Waldnaab, finden Sie uns direkt mitten im Grünen.'
           -
             type: paragraph
             attrs:
@@ -62,7 +62,7 @@ content:
             content:
               -
                 type: text
-                text: 'Unsere Eventstube bietet Platz für bis zu 70 Personen und bildet den idealen Rahmen für Familienfeiern, Hochzeiten, Kommunionen, Firmenfeste und weitere besondere Anlässe. '
+                text: 'Unsere Eventstube mit Terrasse und Aussenbereich, bietet Platz für bis zu 70 Personen und bildet den idealen Rahmen für Familienfeiern, Hochzeiten, Kommunionen, Firmenfeste und weitere besondere Anlässe. '
           -
             type: paragraph
             attrs:
