@@ -1,5 +1,6 @@
 ---
 id: 65a12b0a-2d2f-49fc-9e59-86c7d09b323d
+published: false
 blueprint: event
 title: Pizzaabend
 event_headline_type: h2
@@ -9,7 +10,7 @@ event_crops_size: '4_3'
 event_full_width: false
 event_layoutvariant: card0
 updated_by: 8a836dbc-3945-44cc-b596-37a44f2c793e
-updated_at: 1709554306
+updated_at: 1710521684
 event_datum: '2024-03-13'
 event_uhrzeit: '17:00'
 event_image: events/pizzaabend.png
