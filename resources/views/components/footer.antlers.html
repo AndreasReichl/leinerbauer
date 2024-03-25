@@ -37,6 +37,16 @@
 			<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
 		{{ /nav:footernav }}
 	</div>
+	<div class="footerAuszeichnungen">
+		<div class="auszeichnungenItem">
+			<link href="https://awards.infcdn.net/2024/r_gold.css" rel="stylesheet"/>
+			<div id="b-gold" onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.b-gold_r-link').href);return 0;}">
+				<a href="https://de.restaurantguru.com/Johann-Leiner-Bauers-Hofbackstube-Parkstein" class="b-gold_r-link" target="_blank">Leinerbauern‘s Hofbackstube</a>
+				<p class="b-gold_center">Empfohlen</p> <a href="https://restaurantguru.com" class="b-gold__link" target="_blank">Restaurant Guru</a>
+				<p class="b-gold_year">2024</p>
+			</div>
+		</div>
+	</div>
 	<div class="socialLinks">
 		{{ if sitebasics.instagram }}<a href="{{ sitebasics.instagram }}" class="socialLink instagram" target="_blank"><i class="icofont-instagram"></i><span class="socialLinkText">{{ sitebasics.instagram_kontoname }}</span></a>{{ /if }}
 		{{ if sitebasics.facebook }}<a href="{{ sitebasics.facebook }}" class="socialLink facebook" target="_blank"><i class="icofont-facebook"></i><span class="socialLinkText">{{ sitebasics.facebook_kontoname }}</span></a>{{ /if }}
